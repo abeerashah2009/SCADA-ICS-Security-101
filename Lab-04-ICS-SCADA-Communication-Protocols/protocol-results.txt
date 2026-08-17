@@ -1,0 +1,66 @@
+Lab 04: ICS/SCADA Communication Protocols
+==========================================
+
+Test 1: Protocol Overview
+--------------------------
+
+ICS/SCADA Communication Protocols Overview
+==================================================
+
+Protocol: Modbus RTU
+  Communication Type: Serial
+  Transport: RS-485 / RS-232
+  Common Use: PLCs, sensors, meters
+
+Protocol: Modbus TCP
+  Communication Type: Ethernet
+  Transport: TCP/IP
+  Common Use: Industrial Ethernet networks
+
+Protocol: DNP3
+  Communication Type: Serial or Ethernet
+  Transport: Serial / TCP/IP
+  Common Use: Utilities and SCADA
+
+Protocol: OPC UA
+  Communication Type: Ethernet
+  Transport: TCP/IP
+  Common Use: Industrial interoperability
+
+==================================================
+Simulation completed successfully.
+No real industrial devices were contacted.
+
+
+Test 2: Modbus Simulation
+--------------------------
+
+Modbus Communication Simulation
+========================================
+
+Simulated Holding Registers:
+  Register 1: 125
+  Register 2: 78
+  Register 3: 100
+  Register 4: 45
+
+Reading Register 1...
+Register 1 Value: 125
+
+Simulation completed successfully.
+No real Modbus device was contacted.
+
+
+Lab 04 Result
+=============
+
+All protocol simulations completed successfully.
+
+Protocols covered:
+- Modbus RTU
+- Modbus TCP
+- DNP3
+- OPC UA
+
+The exercises were performed using safe Python simulations.
+No real industrial control equipment was contacted.
