@@ -1,0 +1,45 @@
+Lab 05: Virtual ICS/SCADA Lab Environment
+==========================================
+
+Environment Check Results
+-------------------------
+
+Operating System:
+Linux ip-172-31-10-68 6.14.0-1018-aws #18~24.04.1-Ubuntu SMP Mon Nov 24 19:46:27 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+Virtualization Environment:
+amazon
+
+Hypervisor Information:
+Hypervisor vendor: KVM
+Virtualization type: full
+
+KVM Device:
+/dev/kvm is not available.
+
+Nested Virtualization:
+Nested KVM acceleration is not exposed to this environment.
+
+CPU:
+2 vCPUs
+
+Memory:
+Approximately 7.7 GiB RAM
+
+Conclusion
+----------
+
+The current environment is an AWS EC2 virtual machine running under
+the KVM hypervisor.
+
+The system does not expose /dev/kvm, so nested KVM acceleration is
+not available.
+
+Therefore, installing VirtualBox inside this EC2 instance is not
+considered suitable for creating additional virtual machines.
+
+The environment discovery successfully demonstrated the
+virtualization architecture and its limitations.
+
+Safety:
+No real ICS/SCADA equipment was connected or modified during this lab.
