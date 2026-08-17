@@ -1,0 +1,101 @@
+Lab 07: Identifying ICS Components in a Network
+===============================================
+
+Nmap Version:
+Nmap 7.94SVN
+
+Target:
+127.0.0.1 (localhost)
+
+-----------------------------------------------
+1. HOST DISCOVERY
+-----------------------------------------------
+
+Command:
+nmap -sn 127.0.0.1
+
+Result:
+Host is up.
+
+Nmap done: 1 IP address (1 host up) scanned.
+
+Interpretation:
+The local host responded successfully.
+
+-----------------------------------------------
+2. SERVICE DETECTION
+-----------------------------------------------
+
+Command:
+nmap -sV 127.0.0.1
+
+Result:
+No open TCP services were detected.
+
+Interpretation:
+No accessible TCP services were identified on the
+local host during the scan.
+
+-----------------------------------------------
+3. NETWORK INVENTORY
+-----------------------------------------------
+
+IP Address:    127.0.0.1
+Hostname:      localhost
+Status:        UP
+Device Type:   Linux Host
+Operating OS:  Ubuntu
+Services:      None detected
+ICS Device:    None identified
+
+-----------------------------------------------
+4. ICS COMPONENT IDENTIFICATION
+-----------------------------------------------
+
+PLC:                 Not identified
+HMI:                 Not identified
+SCADA Server:        Not identified
+RTU:                 Not identified
+Industrial Controller: Not identified
+
+Reason:
+The target was a normal Ubuntu AWS EC2 host and not
+a simulated or physical ICS environment.
+
+-----------------------------------------------
+5. SECURITY OBSERVATIONS
+-----------------------------------------------
+
+- Host discovery completed successfully.
+- Service detection completed successfully.
+- No open TCP services were detected.
+- No real ICS devices were contacted.
+- No external systems were scanned.
+- Scanning was restricted to localhost.
+- The exercise was performed safely in the lab environment.
+
+-----------------------------------------------
+6. LEARNING OUTCOME
+-----------------------------------------------
+
+This lab demonstrated how Nmap can be used for:
+
+- Host discovery
+- Service detection
+- Version detection
+- Basic network inventory
+
+The exercise also demonstrated that Nmap results must be
+carefully interpreted before identifying a system as an
+ICS component.
+
+-----------------------------------------------
+FINAL RESULT
+-----------------------------------------------
+
+Host Discovery:              SUCCESS
+Service Detection:           SUCCESS
+ICS Components Identified:   NONE
+External Systems Scanned:    NO
+Real ICS Devices Contacted:  NO
+Lab Completed Safely:        YES
