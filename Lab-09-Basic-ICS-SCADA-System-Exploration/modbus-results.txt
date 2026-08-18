@@ -1,0 +1,51 @@
+============================================================
+Lab 09 - Basic ICS/SCADA System Exploration
+============================================================
+
+1. Simulated Device Configuration
+------------------------------------------------------------
+Device Name : PLC-SIM-01
+Protocol    : Modbus Simulation
+Mode        : Local Simulation
+
+2. Initial Holding Registers
+------------------------------------------------------------
+Register 1: 125
+Register 2: 78
+Register 3: 100
+Register 4: 45
+
+3. Read Operation
+------------------------------------------------------------
+Reading Register 1...
+Register 1 Value: 125
+
+4. Write Operation
+------------------------------------------------------------
+Register 2 Before: 78
+Writing Register 2 = 150
+Register 2 After: 150
+
+5. Read-After-Write Verification
+------------------------------------------------------------
+[PASS] Register write verified successfully
+
+6. Final Holding Registers
+------------------------------------------------------------
+Register 1: 125
+Register 2: 150
+Register 3: 100
+Register 4: 45
+
+7. Security and Safety Verification
+------------------------------------------------------------
+[PASS] Simulation performed locally
+[PASS] No real PLC contacted
+[PASS] No real Modbus device contacted
+[PASS] No external network communication required
+[PASS] No industrial process modified
+
+============================================================
+Simulation completed successfully.
+Completed: 2026-08-18 01:42:56
+============================================================
