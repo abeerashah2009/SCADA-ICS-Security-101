@@ -1,0 +1,143 @@
+================================================================
+Lab 11 - Physical Security in ICS/SCADA
+================================================================
+Safe Hypothetical Facility Assessment
+
+================================================================
+1. Assessment Environment
+----------------------------------------------------------------
+Assessment Type : Hypothetical ICS Facility
+Environment     : Local Documentation Assessment
+Real Facility   : No
+Real PLC        : No
+Real SCADA      : No
+Real CCTV       : No
+External Access : No
+
+================================================================
+2. Physical Safeguards Assessment
+----------------------------------------------------------------
+[REVIEWED] Perimeter fencing              -> DETERRENCE
+[REVIEWED] Controlled entrance            -> ACCESS CONTROL
+[REVIEWED] Electronic access cards        -> AUTHENTICATION
+[REVIEWED] CCTV monitoring                -> DETECTION
+[REVIEWED] Locked control room            -> RESTRICTION
+[REVIEWED] Locked PLC cabinets            -> EQUIPMENT PROTECTION
+[REVIEWED] Restricted server room         -> CRITICAL ASSET PROTECTION
+[REVIEWED] Visitor management             -> ACCOUNTABILITY
+
+================================================================
+3. Unauthorized Physical Access Risks
+----------------------------------------------------------------
+[IDENTIFIED] Unauthorized entry
+[IDENTIFIED] Equipment tampering
+[IDENTIFIED] Equipment theft
+[IDENTIFIED] Unauthorized configuration changes
+[IDENTIFIED] Malware introduction
+[IDENTIFIED] Network disruption
+[IDENTIFIED] Control-system shutdown
+[IDENTIFIED] Operational downtime
+[IDENTIFIED] Loss of monitoring
+[IDENTIFIED] Potential safety impact
+
+================================================================
+4. Hypothetical ICS Site Assessment
+----------------------------------------------------------------
+
+Finding 1
+  Vulnerability : Uncontrolled entrance
+  Risk          : Unauthorized facility access
+  Mitigation    : Electronic access control and visitor registration
+
+Finding 2
+  Vulnerability : CCTV blind spots
+  Risk          : Security events may not be detected
+  Mitigation    : Improve camera coverage and monitoring
+
+Finding 3
+  Vulnerability : Unlocked PLC cabinets
+  Risk          : Physical equipment tampering
+  Mitigation    : Lock cabinets and restrict access
+
+Finding 4
+  Vulnerability : Weak server-room protection
+  Risk          : Unauthorized access to critical systems
+  Mitigation    : Use restricted server room and access control
+
+Finding 5
+  Vulnerability : Poor visitor management
+  Risk          : Unauthorized access to restricted areas
+  Mitigation    : Visitor badges, logs, and escort procedures
+
+================================================================
+5. Defense-in-Depth Model
+----------------------------------------------------------------
+1. Perimeter Fence
+2. Controlled Gate
+3. Visitor Management
+4. Electronic Access Control
+5. CCTV Monitoring
+6. Restricted Control Room
+7. Locked Equipment Rooms
+8. ICS Assets
+
+================================================================
+6. Open-Source Physical Security Tool Review
+----------------------------------------------------------------
+[REVIEWED] ZoneMinder
+Purpose    : Open-source video surveillance management
+Capabilities:
+  - Camera management
+  - Video monitoring
+  - Recording
+  - Event monitoring
+  - Security investigation
+
+[INFO] ZoneMinder was not installed.
+[INFO] This laboratory uses a safe documentation-based assessment.
+
+================================================================
+7. Physical Security Principles
+----------------------------------------------------------------
+[REVIEWED] Defense in depth
+[REVIEWED] Least privilege
+[REVIEWED] Physical access control
+[REVIEWED] Monitoring
+[REVIEWED] Accountability
+[REVIEWED] Resilience
+
+================================================================
+8. Safety Verification
+----------------------------------------------------------------
+[PASS] No real ICS facility accessed
+[PASS] No real PLC contacted
+[PASS] No real SCADA system contacted
+[PASS] No CCTV system accessed
+[PASS] No physical security controls bypassed
+[PASS] No industrial process modified
+[PASS] No external facility tested
+[PASS] Assessment remained hypothetical and local
+
+================================================================
+9. Final Assessment
+----------------------------------------------------------------
+[PASS] Physical safeguards reviewed
+[PASS] Locks reviewed
+[PASS] Fencing reviewed
+[PASS] CCTV reviewed
+[PASS] Case study documented
+[PASS] Unauthorized access risks identified
+[PASS] Security breach scenario analyzed
+[PASS] Hypothetical site assessed
+[PASS] Physical vulnerabilities identified
+[PASS] Mitigation strategies documented
+[PASS] Open-source security software reviewed
+[PASS] Defense-in-depth principles reviewed
+[PASS] Safety requirements verified
+
+================================================================
+Lab 11 Assessment Completed Successfully
+================================================================
+Completed : 2026-08-18 02:32:33
+Status    : COMPLETE
+Evidence  : Physical security assessment documented
