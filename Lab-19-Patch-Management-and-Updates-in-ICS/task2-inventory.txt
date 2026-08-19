@@ -1,0 +1,25 @@
+===== TASK 2: SOFTWARE/VENDOR INVENTORY =====
+
+===== OS =====
+PRETTY_NAME="Ubuntu 24.04.3 LTS"
+VERSION_ID="24.04"
+
+===== KERNEL =====
+6.14.0-1018-aws
+
+===== OPENSSH =====
+OpenSSH_9.6p1 Ubuntu-3ubuntu13.14, OpenSSL 3.0.13 30 Jan 2024
+
+===== NMAP =====
+Nmap version 7.94SVN ( https://nmap.org )
+
+===== AMAZON CLOUDWATCH AGENT =====
+amazon-cloudwatch-agent	1.300062.0b1304-1
+
+===== CONTAINERD =====
+containerd.io	2.2.5-1~ubuntu.24.04~noble
+
+===== DCV =====
+nice-dcv-server	2025.0.20103-1
+nice-dcv-web-viewer	2025.0.20103-1
+nice-xdcv	2025.0.688-1

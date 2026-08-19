@@ -1,0 +1,120 @@
+===== OS INFORMATION =====
+PRETTY_NAME="Ubuntu 24.04.3 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.3 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+
+===== KERNEL =====
+6.14.0-1018-aws
+
+===== UPGRADABLE PACKAGES =====
+Listing...
+accountsservice/noble-updates,noble-security 23.13.9-2ubuntu6.1 amd64 [upgradable from: 23.13.9-2ubuntu6]
+alsa-ucm-conf/noble-updates 1.2.10-1ubuntu5.14 all [upgradable from: 1.2.10-1ubuntu5.7]
+amd64-microcode/noble-updates,noble-security 3.20251202.1ubuntu0.24.04.1 amd64 [upgradable from: 3.20250311.1ubuntu0.24.04.1]
+apparmor/noble-updates 4.0.1really4.0.1-0ubuntu0.24.04.7 amd64 [upgradable from: 4.0.1really4.0.1-0ubuntu0.24.04.5]
+apport-core-dump-handler/noble-updates 2.28.3-0ubuntu0.1 all [upgradable from: 2.28.1-0ubuntu3.8]
+apport-gtk/noble-updates 2.28.3-0ubuntu0.1 all [upgradable from: 2.28.1-0ubuntu3.8]
+apport/noble-updates 2.28.3-0ubuntu0.1 all [upgradable from: 2.28.1-0ubuntu3.8]
+avahi-daemon/noble-updates,noble-security 0.8-13ubuntu6.2 amd64 [upgradable from: 0.8-13ubuntu6]
+base-files/noble-updates 13ubuntu10.4 amd64 [upgradable from: 13ubuntu10.3]
+bind9-dnsutils/noble-updates,noble-security 1:9.18.39-0ubuntu0.24.04.5 amd64 [upgradable from: 1:9.18.39-0ubuntu0.24.04.2]
+bind9-host/noble-updates,noble-security 1:9.18.39-0ubuntu0.24.04.5 amd64 [upgradable from: 1:9.18.39-0ubuntu0.24.04.2]
+bind9-libs/noble-updates,noble-security 1:9.18.39-0ubuntu0.24.04.5 amd64 [upgradable from: 1:9.18.39-0ubuntu0.24.04.2]
+bsdextrautils/noble-updates,noble-security 2.39.3-9ubuntu6.5 amd64 [upgradable from: 2.39.3-9ubuntu6.4]
+bsdutils/noble-updates,noble-security 1:2.39.3-9ubuntu6.5 amd64 [upgradable from: 1:2.39.3-9ubuntu6.4]
+cloud-init/noble-updates 26.1-0ubuntu1~24.04.1 all [upgradable from: 25.2-0ubuntu1~24.04.1]
+containerd.io/noble 2.3.3-1~ubuntu.24.04~noble amd64 [upgradable from: 2.2.5-1~ubuntu.24.04~noble]
+coreutils/noble-updates 9.4-3ubuntu6.2 amd64 [upgradable from: 9.4-3ubuntu6.1]
+cpp-13-x86-64-linux-gnu/noble-updates,noble-security 13.3.0-6ubuntu2~24.04.1 amd64 [upgradable from: 13.3.0-6ubuntu2~24.04]
+cpp-13/noble-updates,noble-security 13.3.0-6ubuntu2~24.04.1 amd64 [upgradable from: 13.3.0-6ubuntu2~24.04]
+cups-bsd/noble-updates,noble-security 2.4.7-1.2ubuntu7.14 amd64 [upgradable from: 2.4.7-1.2ubuntu7.9]
+cups-client/noble-updates,noble-security 2.4.7-1.2ubuntu7.14 amd64 [upgradable from: 2.4.7-1.2ubuntu7.9]
+cups-common/noble-updates,noble-security 2.4.7-1.2ubuntu7.14 all [upgradable from: 2.4.7-1.2ubuntu7.9]
+cups-core-drivers/noble-updates,noble-security 2.4.7-1.2ubuntu7.14 amd64 [upgradable from: 2.4.7-1.2ubuntu7.9]
+cups-daemon/noble-updates,noble-security 2.4.7-1.2ubuntu7.14 amd64 [upgradable from: 2.4.7-1.2ubuntu7.9]
+cups-ipp-utils/noble-updates,noble-security 2.4.7-1.2ubuntu7.14 amd64 [upgradable from: 2.4.7-1.2ubuntu7.9]
+cups-ppdc/noble-updates,noble-security 2.4.7-1.2ubuntu7.14 amd64 [upgradable from: 2.4.7-1.2ubuntu7.9]
+cups-server-common/noble-updates,noble-security 2.4.7-1.2ubuntu7.14 all [upgradable from: 2.4.7-1.2ubuntu7.9]
+cups/noble-updates,noble-security 2.4.7-1.2ubuntu7.14 amd64 [upgradable from: 2.4.7-1.2ubuntu7.9]
+curl/noble-updates,noble-security 8.5.0-2ubuntu10.11 amd64 [upgradable from: 8.5.0-2ubuntu10.9]
+
+===== NMAP VERSION =====
+Nmap version 7.94SVN ( https://nmap.org )
+Platform: x86_64-pc-linux-gnu
+Compiled with: liblua-5.4.6 openssl-3.0.13 libssh2-1.11.0 libz-1.3 libpcre2-10.42 libpcap-1.10.4 nmap-libdnet-1.12 ipv6
+Compiled without:
+Available nsock engines: epoll poll select
+
+===== ACTIVE NETWORK HOSTS =====
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-08-19 12:18 UTC
+Nmap scan report for ip-172-31-10-1.ec2.internal (172.31.10.1)
+Host is up (0.000068s latency).
+MAC Address: 0A:78:67:64:4C:BD (Unknown)
+Nmap scan report for ip-172-31-10-38.ec2.internal (172.31.10.38)
+Host is up (0.000038s latency).
+MAC Address: 0A:FF:E0:56:66:71 (Unknown)
+Nmap scan report for ip-172-31-10-89.ec2.internal (172.31.10.89)
+Host is up (0.000056s latency).
+MAC Address: 0A:FF:CF:FC:D4:07 (Unknown)
+Nmap scan report for ip-172-31-10-151.ec2.internal (172.31.10.151)
+Host is up (0.000039s latency).
+MAC Address: 0A:FF:F4:54:86:5F (Unknown)
+Nmap scan report for ip-172-31-10-187.ec2.internal (172.31.10.187)
+Host is up (0.000060s latency).
+MAC Address: 0A:FF:CC:EE:2A:A5 (Unknown)
+Nmap scan report for ip-172-31-10-18.ec2.internal (172.31.10.18)
+Host is up.
+Nmap done: 256 IP addresses (6 hosts up) scanned in 1.90 seconds
+
+===== LOCAL SERVICES =====
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-08-19 12:18 UTC
+Nmap scan report for ip-172-31-10-18.ec2.internal (172.31.10.18)
+Host is up (0.000015s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT     STATE SERVICE        VERSION
+22/tcp   open  ssh            OpenSSH 9.6p1 Ubuntu 3ubuntu13.14 (Ubuntu Linux; protocol 2.0)
+8443/tcp open  ssl/https-alt?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8443-TCP:V=7.94SVN%T=SSL%I=2%D=8/19%Time=6A859F3B%P=x86_64-pc-linux
+SF:-gnu%r(GetRequest,61,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nServer:\x20
+SF:dcv\r\nDate:\x20Wed,\x2019\x20Aug\x202026\x2012:19:07\x20GMT\r\nContent
+SF:-Length:\x200\r\n\r\n")%r(HTTPOptions,61,"HTTP/1\.0\x20400\x20Bad\x20Re
+SF:quest\r\nServer:\x20dcv\r\nDate:\x20Wed,\x2019\x20Aug\x202026\x2012:19:
+SF:07\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(FourOhFourRequest,61,"HTT
+SF:P/1\.0\x20400\x20Bad\x20Request\r\nServer:\x20dcv\r\nDate:\x20Wed,\x201
+SF:9\x20Aug\x202026\x2012:19:07\x20GMT\r\nContent-Length:\x200\r\n\r\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 25.45 seconds
+
+===== LISTENING SERVICES =====
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                 
+udp   UNCONN 0      0            0.0.0.0:51987      0.0.0.0:*    users:(("avahi-daemon",pid=663,fd=14))                 
+udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=402,fd=16))              
+udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=402,fd=14))              
+udp   UNCONN 0      0            0.0.0.0:8443       0.0.0.0:*    users:(("dcvserver",pid=730,fd=11))                    
+udp   UNCONN 0      0          127.0.0.1:323        0.0.0.0:*    users:(("chronyd",pid=961,fd=5))                       
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*    users:(("avahi-daemon",pid=663,fd=12))                 
+udp   UNCONN 0      0               [::]:8443          [::]:*    users:(("dcvserver",pid=730,fd=12))                    
+udp   UNCONN 0      0               [::]:41274         [::]:*    users:(("avahi-daemon",pid=663,fd=15))                 
+udp   UNCONN 0      0              [::1]:323           [::]:*    users:(("chronyd",pid=961,fd=6))                       
+udp   UNCONN 0      0               [::]:5353          [::]:*    users:(("avahi-daemon",pid=663,fd=13))                 
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=402,fd=17))              
+tcp   LISTEN 0      10           0.0.0.0:8443       0.0.0.0:*    users:(("dcvserver",pid=730,fd=9))                     
+tcp   LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=2757,fd=3),("systemd",pid=1,fd=331))
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=402,fd=15))              
+tcp   LISTEN 0      128        127.0.0.1:6010       0.0.0.0:*    users:(("sshd",pid=2890,fd=8))                         
+tcp   LISTEN 0      10              [::]:8443          [::]:*    users:(("dcvserver",pid=730,fd=10))                    
+tcp   LISTEN 0      4096            [::]:22            [::]:*    users:(("sshd",pid=2757,fd=4),("systemd",pid=1,fd=332))
+tcp   LISTEN 0      128            [::1]:6010          [::]:*    users:(("sshd",pid=2890,fd=7))                         
