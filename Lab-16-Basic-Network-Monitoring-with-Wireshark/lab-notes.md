@@ -573,3 +573,73 @@ protocol validation when monitoring ICS/SCADA environments.
 
 All activities were performed within the authorized educational
 laboratory environment.
+
+---
+
+# 19. Final Capture Evidence
+
+## Capture File
+
+Capture file:
+
+/tmp/lab16.pcapng
+
+Capture filter:
+
+tcp port 502 or tcp port 20000 or tcp port 8080
+
+The capture successfully recorded traffic related to TCP/502
+and TCP/20000.
+
+## Protocol Hierarchy
+
+The capture contained:
+
+- Ethernet
+- IPv4
+- TCP
+
+Total captured frames:
+
+8
+
+## ICS Port Filter
+
+Filter:
+
+tcp.port==502 or tcp.port==20000
+
+Result:
+
+TCP connection attempts to both TCP/502 and TCP/20000 were
+successfully captured.
+
+The connections were refused/reset because no Modbus or DNP3
+listener was running.
+
+## Modbus/DNP3 Protocol Filter
+
+Filter:
+
+modbus or dnp3 or http
+
+Result:
+
+No packets were decoded as Modbus, DNP3, or HTTP.
+
+This confirms that the captured traffic consisted of TCP
+connection attempts rather than valid decoded Modbus/DNP3
+application traffic.
+
+## Final Takeaway
+
+The laboratory demonstrated how TShark can capture live traffic,
+filter traffic by TCP port, and analyze protocol information.
+
+The capture showed connection attempts to the standard Modbus
+TCP/502 and DNP3 TCP/20000 ports. However, no valid Modbus or
+DNP3 application packets were present because no protocol listeners
+were running.
+
+This demonstrates an important monitoring principle: a port number
+alone does not prove that a specific ICS protocol is being used.
