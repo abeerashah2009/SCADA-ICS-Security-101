@@ -1,0 +1,13 @@
+Asset ID,Asset Type,Hostname,IP Address,OS/Firmware,Location,Status,Criticality,Notes
+NET-001,Engineering/Lab Workstation,ip-172-31-10-82,172.31.10.82,Ubuntu 24.04.3 LTS,Lab Environment,Active,High,Current assessment host
+NET-002,Network Host,ip-172-31-10-42.ec2.internal,172.31.10.42,Not Determined,Lab Network,Reachable,Unknown,Discovered by Nmap host discovery
+NET-003,Network Host,ip-172-31-10-96.ec2.internal,172.31.10.96,Not Determined,Lab Network,Reachable,Unknown,Discovered by Nmap host discovery
+NET-004,Network Host,ip-172-31-10-118.ec2.internal,172.31.10.118,Not Determined,Lab Network,Reachable,Unknown,Discovered by Nmap host discovery
+NET-005,Network Host,ip-172-31-10-142.ec2.internal,172.31.10.142,Not Determined,Lab Network,Reachable,Unknown,Discovered by Nmap host discovery
+NET-006,Network Host,ip-172-31-10-151.ec2.internal,172.31.10.151,Not Determined,Lab Network,Reachable,Unknown,Discovered by Nmap host discovery
+NET-007,Network Host,ip-172-31-10-153.ec2.internal,172.31.10.153,Not Determined,Lab Network,Reachable,Unknown,Discovered by Nmap host discovery
+NET-008,Network Host,ip-172-31-10-216.ec2.internal,172.31.10.216,Not Determined,Lab Network,Reachable,Unknown,Discovered by Nmap host discovery
+ICS-001,PLC,Not Detected,Not Detected,Unknown,Lab Environment,Not Detected,High,No PLC role confirmed by host discovery
+ICS-002,RTU,Not Detected,Not Detected,Unknown,Lab Environment,Not Detected,High,No RTU role confirmed by host discovery
+ICS-003,HMI,Not Detected,Not Detected,Unknown,Lab Environment,Not Detected,High,No HMI role confirmed by host discovery
+ICS-004,Sensor,Not Detected,Not Detected,Unknown,Lab Environment,Not Detected,Medium,No physical sensor available for inspection

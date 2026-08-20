@@ -1,0 +1,6 @@
+Asset ID,Software,Version,Role,Status,Notes
+SW-001,Ubuntu Linux,24.04.3 LTS,Engineering/Lab Workstation,Installed,Operating system
+SW-002,Nmap,7.94SVN,Network Discovery,Installed,Used for ICS/SCADA asset discovery
+SW-003,Rsyslog,8.2312.0,Centralized Logging,Installed,Logging service available on the lab system
+SW-004,Python,3.12.3,Automation/Scripting,Installed,Used for lab automation and scripting
+SW-005,Git,2.43.0,Version Control,Installed,Used for maintaining the SCADA lab repository

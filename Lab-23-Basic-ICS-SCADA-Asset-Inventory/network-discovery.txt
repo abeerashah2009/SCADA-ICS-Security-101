@@ -1,0 +1,18 @@
+# Nmap 7.94SVN scan initiated Thu Aug 20 11:22:33 2026 as: nmap -sn -oN network-discovery.txt 172.31.10.0/24
+Nmap scan report for ip-172-31-10-42.ec2.internal (172.31.10.42)
+Host is up (0.0012s latency).
+Nmap scan report for ip-172-31-10-82.ec2.internal (172.31.10.82)
+Host is up (0.00058s latency).
+Nmap scan report for ip-172-31-10-96.ec2.internal (172.31.10.96)
+Host is up (0.0010s latency).
+Nmap scan report for ip-172-31-10-118.ec2.internal (172.31.10.118)
+Host is up (0.0018s latency).
+Nmap scan report for ip-172-31-10-142.ec2.internal (172.31.10.142)
+Host is up (0.0027s latency).
+Nmap scan report for ip-172-31-10-151.ec2.internal (172.31.10.151)
+Host is up (0.0018s latency).
+Nmap scan report for ip-172-31-10-153.ec2.internal (172.31.10.153)
+Host is up (0.0015s latency).
+Nmap scan report for ip-172-31-10-216.ec2.internal (172.31.10.216)
+Host is up (0.0011s latency).
+# Nmap done at Thu Aug 20 11:22:39 2026 -- 256 IP addresses (8 hosts up) scanned in 6.28 seconds

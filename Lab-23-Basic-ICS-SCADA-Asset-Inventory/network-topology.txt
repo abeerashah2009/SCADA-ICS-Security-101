@@ -1,0 +1,28 @@
+ICS/SCADA LAB NETWORK TOPOLOGY
+
+                    Internet / AWS Network
+                             |
+                       172.31.10.1
+                         Gateway
+                             |
+                    172.31.10.0/24
+                             |
+                 +-----------+-----------+
+                 |                       |
+        Assessment Host            Other Hosts
+        172.31.10.82              172.31.10.42
+        Ubuntu 24.04              172.31.10.96
+        Nmap                      172.31.10.118
+        Rsyslog                   172.31.10.142
+        Python                    172.31.10.151
+        Git                       172.31.10.153
+                                  172.31.10.216
+
+                    TCP/502 Assessment
+                           |
+                    No confirmed
+                    Modbus TCP PLC
+
+Note:
+The discovered hosts are network-reachable systems. Their specific
+ICS roles were not confirmed by host discovery alone.

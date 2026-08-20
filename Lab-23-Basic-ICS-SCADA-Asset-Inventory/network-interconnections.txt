@@ -1,0 +1,49 @@
+ICS/SCADA NETWORK INTERCONNECTIONS INVENTORY
+============================================
+
+Network:
+172.31.10.0/24
+
+Assessment Host:
+Hostname: ip-172-31-10-82
+IP Address: 172.31.10.82
+Interface: ens5
+Subnet: 172.31.10.0/24
+Gateway: 172.31.10.1
+
+Discovered Network Hosts:
+172.31.10.42
+172.31.10.82
+172.31.10.96
+172.31.10.118
+172.31.10.142
+172.31.10.151
+172.31.10.153
+172.31.10.216
+
+Modbus TCP Assessment:
+TCP/502 was scanned on the discovered hosts.
+No host was confirmed as an active Modbus TCP PLC.
+
+172.31.10.42   TCP/502 closed
+172.31.10.82   TCP/502 closed
+172.31.10.96   TCP/502 closed
+172.31.10.118  TCP/502 closed
+172.31.10.142  TCP/502 closed
+172.31.10.151  TCP/502 filtered
+172.31.10.153  TCP/502 closed
+
+Critical Interconnections:
+1. Assessment workstation -> 172.31.10.0/24 lab network
+2. Assessment workstation -> default gateway 172.31.10.1
+3. Network hosts -> shared 172.31.10.0/24 network
+4. No confirmed PLC, RTU, HMI, or sensor interconnection was identified.
+
+Security Observation:
+Host discovery confirms reachable systems but does not identify their
+specific ICS roles. Additional authorized service/version discovery would
+be required to classify unknown hosts.
+
+Conclusion:
+The lab network topology was documented based on observed network
+configuration and Nmap results. No active Modbus TCP device was confirmed.
