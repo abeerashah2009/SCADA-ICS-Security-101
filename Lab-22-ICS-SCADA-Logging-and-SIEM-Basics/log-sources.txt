@@ -1,0 +1,39 @@
+ICS/SCADA LOG SOURCES
+=====================
+
+1. PLC Logs
+-----------
+Typical information:
+- PLC operating status
+- Runtime errors
+- Input/output state changes
+- Configuration changes
+- Communication errors
+- User access events
+
+Example:
+2026-08-20 15:00:01 [PLC01] Status: RUN
+2026-08-20 15:01:22 [PLC01] Input: I0.1 State: ON
+2026-08-20 15:03:10 [PLC01] Error: Communication timeout
+
+2. HMI Logs
+-----------
+Typical information:
+- Operator login/logout
+- Interface interactions
+- Alarm acknowledgements
+- System status
+- Configuration changes
+- Error messages
+
+Example:
+2026-08-20 15:05:11 [HMI01] User: Operator Login: Success
+2026-08-20 15:06:32 [HMI01] Alarm: High Temperature Acknowledged
+
+3. SIEM
+-------
+A SIEM can collect logs from PLCs, HMIs, servers, firewalls,
+and other security devices.
+
+The collected logs can then be searched and analyzed to
+identify suspicious activity.

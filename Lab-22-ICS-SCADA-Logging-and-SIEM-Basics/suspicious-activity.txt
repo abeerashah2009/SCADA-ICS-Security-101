@@ -1,0 +1,43 @@
+ICS/SCADA SUSPICIOUS ACTIVITY ANALYSIS
+======================================
+
+PLC Analysis
+-------------
+
+Command:
+grep "Access: Denied" plc_logs.txt
+
+Finding:
+Three denied access attempts were detected against PLC01.
+
+Source IP:
+10.10.10.55
+
+Assessment:
+Multiple denied access attempts from the same unknown source
+may indicate unauthorized access attempts or password guessing.
+
+HMI Analysis
+------------
+
+Command:
+grep "Login: Failed" hmi_logs.txt
+
+Finding:
+Two failed login attempts were detected against HMI01.
+
+Source IP:
+10.10.10.55
+
+Assessment:
+The same source IP appears in both PLC and HMI failed-access
+events. This should be investigated by the security team.
+
+Conclusion
+----------
+
+The sample logs demonstrate how repeated authentication
+failures and denied access events can be identified using
+simple log-search commands. In a production ICS environment,
+these events could be forwarded to a SIEM for centralized
+monitoring, correlation, alerting, and investigation.

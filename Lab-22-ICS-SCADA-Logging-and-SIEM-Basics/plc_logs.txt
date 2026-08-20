@@ -1,0 +1,10 @@
+2026-08-20 15:00:01 [PLC01] Status: RUN
+2026-08-20 15:01:22 [PLC01] Input: I0.1 State: ON
+2026-08-20 15:02:15 [PLC01] User: Operator Access: Granted SourceIP: 192.168.1.50
+2026-08-20 15:03:10 [PLC01] Error: Communication timeout
+2026-08-20 15:04:30 [PLC01] User: Admin Access: Granted SourceIP: 192.168.1.10
+2026-08-20 15:05:42 [PLC01] User: Unknown Access: Denied SourceIP: 10.10.10.55
+2026-08-20 15:05:44 [PLC01] User: Unknown Access: Denied SourceIP: 10.10.10.55
+2026-08-20 15:05:46 [PLC01] User: Unknown Access: Denied SourceIP: 10.10.10.55
+2026-08-20 15:06:01 [PLC01] Configuration Change: Attempted
+2026-08-20 15:07:15 [PLC01] Status: RUN

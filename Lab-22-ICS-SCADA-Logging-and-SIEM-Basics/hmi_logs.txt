@@ -1,0 +1,6 @@
+2026-08-20 15:10:01 [HMI01] User: Operator Login: Success SourceIP: 192.168.1.60
+2026-08-20 15:11:20 [HMI01] Alarm: High Temperature Acknowledged
+2026-08-20 15:12:10 [HMI01] User: Engineer Login: Success SourceIP: 192.168.1.70
+2026-08-20 15:13:05 [HMI01] System Status: Normal
+2026-08-20 15:14:33 [HMI01] User: Unknown Login: Failed SourceIP: 10.10.10.55
+2026-08-20 15:14:35 [HMI01] User: Unknown Login: Failed SourceIP: 10.10.10.55
