@@ -1,0 +1,45 @@
+LAB 25 - ICS/SCADA INCIDENT RESPONSE
+INCIDENT INDICATORS AND TRIAGE CHECKLIST
+=========================================
+
+Purpose:
+This file documents basic indicators that may suggest a
+cybersecurity incident in an ICS/SCADA environment.
+
+Network Indicators:
+- Unexpected network connections
+- Unknown source or destination IP addresses
+- Unexpected open or listening ports
+- Unusual traffic volume
+- Repeated connection attempts
+- Unexpected communication between network zones
+
+Host Indicators:
+- Unknown processes or services
+- Unexpected user accounts
+- Unauthorized configuration changes
+- Unusual CPU or memory usage
+- Unexpected files or executables
+- Repeated authentication failures
+
+ICS/SCADA Indicators:
+- Unexpected PLC or RTU communication
+- Unusual changes to control commands
+- Loss of HMI visibility
+- Unexpected changes in process values
+- Communication with unauthorized engineering systems
+- Unexpected device restarts
+
+Initial Response:
+1. Confirm the alert or anomaly.
+2. Compare observations with the baseline.
+3. Determine affected systems.
+4. Protect personnel and physical processes.
+5. Notify the incident response team.
+6. Preserve relevant evidence.
+7. Apply containment only after considering operational and safety impact.
+8. Document all actions and observations.
+
+Important ICS Principle:
+Safety and operational continuity must be considered before
+disconnecting or shutting down critical control equipment.

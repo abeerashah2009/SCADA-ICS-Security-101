@@ -1,0 +1,31 @@
+LAB 25 - ICS/SCADA INCIDENT RESPONSE
+BASELINE NETWORK OBSERVATION
+================================
+
+Host IP:
+172.31.10.118/24
+
+Primary Interface:
+ens5
+
+Network:
+172.31.10.0/24
+
+Default Gateway:
+172.31.10.1
+
+Listening Services:
+TCP 22    SSH
+TCP 8443  Web/Application Service
+TCP 53    Local DNS resolver
+UDP 53    Local DNS resolver
+UDP 5353  Multicast DNS
+
+Docker:
+docker0 - 172.17.0.1/16
+Interface currently DOWN
+
+Purpose:
+This file records the network and listening-service baseline
+before incident-response activities are performed.
+
