@@ -1,29 +1,38 @@
 ICS/SCADA NETWORK INTERCONNECTIONS INVENTORY
 ============================================
 
+Assessment Date:
+2026-08-20
+
 Network:
 172.31.10.0/24
 
 Assessment Host:
 Hostname: ip-172-31-10-82
 IP Address: 172.31.10.82
+Operating System: Ubuntu 24.04.3 LTS
 Interface: ens5
 Subnet: 172.31.10.0/24
 Gateway: 172.31.10.1
 
 Discovered Network Hosts:
-172.31.10.42
-172.31.10.82
-172.31.10.96
-172.31.10.118
-172.31.10.142
-172.31.10.151
-172.31.10.153
-172.31.10.216
+1. 172.31.10.42
+2. 172.31.10.82
+3. 172.31.10.96
+4. 172.31.10.118
+5. 172.31.10.142
+6. 172.31.10.151
+7. 172.31.10.153
+8. 172.31.10.216
+
+Host Discovery:
+Nmap host discovery identified eight reachable hosts during the initial
+assessment.
 
 Modbus TCP Assessment:
-TCP/502 was scanned on the discovered hosts.
-No host was confirmed as an active Modbus TCP PLC.
+TCP port 502 was assessed on the discovered hosts.
+
+Results:
 
 172.31.10.42   TCP/502 closed
 172.31.10.82   TCP/502 closed
@@ -32,18 +41,31 @@ No host was confirmed as an active Modbus TCP PLC.
 172.31.10.142  TCP/502 closed
 172.31.10.151  TCP/502 filtered
 172.31.10.153  TCP/502 closed
+172.31.10.216  Host unavailable during follow-up Modbus assessment
+
+Important Observation:
+172.31.10.216 was discovered during the initial host discovery scan.
+During the follow-up Modbus assessment, Nmap reported that the host
+appeared to be down. Therefore, its TCP/502 state could not be determined.
+
+ICS Asset Classification:
+No PLC, RTU, HMI, or physical sensor role was confirmed from the available
+network evidence.
 
 Critical Interconnections:
 1. Assessment workstation -> 172.31.10.0/24 lab network
 2. Assessment workstation -> default gateway 172.31.10.1
-3. Network hosts -> shared 172.31.10.0/24 network
+3. Discovered hosts -> shared 172.31.10.0/24 network
 4. No confirmed PLC, RTU, HMI, or sensor interconnection was identified.
 
-Security Observation:
-Host discovery confirms reachable systems but does not identify their
-specific ICS roles. Additional authorized service/version discovery would
-be required to classify unknown hosts.
+Security Observations:
+- Host discovery identifies reachable systems but does not prove their ICS roles.
+- TCP/502 was not confirmed open on any responding host.
+- 172.31.10.151 returned a filtered TCP/502 state.
+- 172.31.10.216 was unavailable during the follow-up Modbus assessment.
+- Unknown assets should not be classified without sufficient evidence.
 
 Conclusion:
-The lab network topology was documented based on observed network
-configuration and Nmap results. No active Modbus TCP device was confirmed.
+The observed network topology and interconnections were documented using
+host discovery, local network configuration, and Modbus TCP assessment.
+No active Modbus TCP PLC was confirmed from the available evidence.

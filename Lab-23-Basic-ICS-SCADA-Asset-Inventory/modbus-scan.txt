@@ -1,44 +1,57 @@
-# Nmap 7.94SVN scan initiated Thu Aug 20 11:24:48 2026 as: nmap -p 502 -oN modbus-scan.txt 172.31.10.42 172.31.10.82 172.31.10.96 172.31.10.118 172.31.10.142 172.31.10.151 172.31.10.153 172.31.10.216
-Nmap scan report for ip-172-31-10-42.ec2.internal (172.31.10.42)
-Host is up (0.00049s latency).
+# Lab 23 Modbus TCP Assessment
+# Assessment date: 2026-08-20
+# Assessment network: 172.31.10.0/24
+#
+# Initial Nmap assessment:
+# nmap -p 502 172.31.10.42 172.31.10.82 172.31.10.96 172.31.10.118 172.31.10.142 172.31.10.151 172.31.10.153 172.31.10.216
+#
+# Results from the initial assessment:
 
-PORT    STATE  SERVICE
-502/tcp closed mbap
+Nmap scan report for ip-172-31-10-42.ec2.internal (172.31.10.42)
+Host is up.
+PORT    STATE   SERVICE
+502/tcp closed  mbap
 
 Nmap scan report for ip-172-31-10-82.ec2.internal (172.31.10.82)
-Host is up (0.00040s latency).
-
-PORT    STATE  SERVICE
-502/tcp closed mbap
+Host is up.
+PORT    STATE   SERVICE
+502/tcp closed  mbap
 
 Nmap scan report for ip-172-31-10-96.ec2.internal (172.31.10.96)
-Host is up (0.00036s latency).
-
-PORT    STATE  SERVICE
-502/tcp closed mbap
+Host is up.
+PORT    STATE   SERVICE
+502/tcp closed  mbap
 
 Nmap scan report for ip-172-31-10-118.ec2.internal (172.31.10.118)
-Host is up (0.00042s latency).
-
-PORT    STATE  SERVICE
-502/tcp closed mbap
+Host is up.
+PORT    STATE   SERVICE
+502/tcp closed  mbap
 
 Nmap scan report for ip-172-31-10-142.ec2.internal (172.31.10.142)
-Host is up (0.00063s latency).
+Host is up.
+PORT    STATE   SERVICE
+502/tcp closed  mbap
 
-PORT    STATE  SERVICE
-502/tcp closed mbap
-
-Nmap scan report for ip-172-31-10-151.ec2.internal (172.31.10.151)
-Host is up (0.00063s latency).
-
+Nmap scan report for ip-172-31-10.151.ec2.internal (172.31.10.151)
+Host is up.
 PORT    STATE    SERVICE
 502/tcp filtered mbap
 
 Nmap scan report for ip-172-31-10-153.ec2.internal (172.31.10.153)
-Host is up (0.00058s latency).
+Host is up.
+PORT    STATE   SERVICE
+502/tcp closed  mbap
 
-PORT    STATE  SERVICE
-502/tcp closed mbap
-
-# Nmap done at Thu Aug 20 11:24:49 2026 -- 8 IP addresses (7 hosts up) scanned in 1.45 seconds
+# Follow-up assessment for 172.31.10.216:
+# nmap -p 502 172.31.10.216 -oN modbus-216-sv.txt
+#
+# Result:
+# Host seemed down during the follow-up assessment.
+# No TCP/502 state could be determined because the host did not respond.
+#
+# Classification:
+# 172.31.10.216 - Host unavailable during Modbus assessment.
+#
+# Conclusion:
+# No active Modbus TCP PLC was confirmed among the hosts that responded
+# to the Modbus TCP assessment.
