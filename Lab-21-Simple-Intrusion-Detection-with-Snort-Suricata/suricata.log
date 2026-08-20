@@ -1,0 +1,18 @@
+[21852 - Suricata-Main] 2026-08-20 10:46:25 Notice: suricata: This is Suricata version 7.0.3 RELEASE running in USER mode
+[21852 - Suricata-Main] 2026-08-20 10:46:25 Info: cpu: CPUs/cores online: 2
+[21852 - Suricata-Main] 2026-08-20 10:46:25 Info: suricata: Setting engine mode to IDS mode by default
+[21852 - Suricata-Main] 2026-08-20 10:46:25 Info: exception-policy: master exception-policy set to: auto
+[21852 - Suricata-Main] 2026-08-20 10:46:25 Info: logopenfile: fast output device (regular) initialized: fast.log
+[21852 - Suricata-Main] 2026-08-20 10:46:25 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[21852 - Suricata-Main] 2026-08-20 10:46:25 Info: logopenfile: stats output device (regular) initialized: stats.log
+[21852 - Suricata-Main] 2026-08-20 10:46:25 Info: detect: 1 rule files processed. 1 rules successfully loaded, 0 rules failed, 0
+[21852 - Suricata-Main] 2026-08-20 10:46:25 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[21852 - Suricata-Main] 2026-08-20 10:46:25 Info: detect: 1 signatures processed. 1 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[21852 - Suricata-Main] 2026-08-20 10:46:25 Info: unix-manager: unix socket '/var/run/suricata-command.socket'
+[21853 - RX#01] 2026-08-20 10:46:25 Info: pcap: Starting file run for modbus-sample.pcap
+[21852 - Suricata-Main] 2026-08-20 10:46:25 Notice: threads: Threads created -> RX: 1 W: 2 FM: 1 FR: 1   Engine started.
+[21853 - RX#01] 2026-08-20 10:46:25 Info: pcap: pcap file modbus-sample.pcap end of file reached (pcap err code 0)
+[21852 - Suricata-Main] 2026-08-20 10:46:25 Notice: suricata: Signal Received.  Stopping engine.
+[21852 - Suricata-Main] 2026-08-20 10:46:25 Info: suricata: time elapsed 0.037s
+[21853 - RX#01] 2026-08-20 10:46:25 Notice: pcap: read 1 file, 3 packets, 132 bytes
+[21852 - Suricata-Main] 2026-08-20 10:46:25 Info: counters: Alerts: 1
