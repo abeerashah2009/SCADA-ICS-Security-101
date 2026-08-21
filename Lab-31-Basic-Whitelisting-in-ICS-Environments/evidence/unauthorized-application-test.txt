@@ -1,0 +1,7 @@
+Unauthorized Application: nano
+Path: /usr/bin/nano
+Version:
+ GNU nano, version 7.2
+
+AppArmor Profile:
+No AppArmor profile found for nano

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "SCADA Test Application"
+echo "Application is running successfully."
+echo "ICS process simulation active."
+
+while true
+do
+    sleep 10
+done
