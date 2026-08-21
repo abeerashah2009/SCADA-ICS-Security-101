@@ -1,0 +1,14 @@
+ICS/SCADA Laboratory System Configuration
+=========================================
+
+System Role: SCADA Control Node
+HMI: Main_Control_Room_HMI
+PLC: PLC-01
+Protocol: Modbus TCP
+Modbus Port: 502
+Backup Priority: Critical
+
+Backup Requirements:
+- HMI configuration
+- PLC program
+- Network/system configuration

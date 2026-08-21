@@ -1,0 +1,11 @@
+======================================
+ ICS/SCADA Backup Started
+======================================
+sending incremental file list
+
+sent 207 bytes  received 14 bytes  442.00 bytes/sec
+total size is 729  speedup is 3.30
+[PASS] ICS/SCADA backup completed successfully.
+======================================
+ Backup Completed
+======================================
