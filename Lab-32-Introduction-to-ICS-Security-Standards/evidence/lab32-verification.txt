@@ -1,0 +1,45 @@
+LAB 32 — ICS SECURITY STANDARDS VERIFICATION
+
+Environment:
+AWS EC2 Ubuntu Linux
+
+Security Standard Reviewed:
+NIST SP 800-82 Revision 2
+
+Topics Reviewed:
+- ICS security fundamentals
+- ICS-specific risks
+- Network segmentation
+- Access control
+- Patch management
+- Malware protection
+- Monitoring and logging
+- Incident response
+- Backup and recovery
+- Physical security
+- Legacy systems
+- Change management
+
+Documents Created:
+
+1. standards/nist-sp-800-82-review.md
+   Purpose:
+   Documents the NIST SP 800-82 review and major ICS security concepts.
+
+2. standards/ics-security-takeaways.md
+   Purpose:
+   Documents the major security recommendations identified during the review.
+
+3. standards/ics-vs-it.md
+   Purpose:
+   Compares ICS security requirements with traditional IT security.
+
+Laboratory Limitation:
+
+This was a documentation and standards-review exercise performed in an AWS environment.
+
+No physical PLC, RTU, HMI, SCADA server, industrial network, or real industrial process was available.
+
+No production ICS system was modified.
+
+LAB 32 STATUS: COMPLETE
