@@ -1,0 +1,21 @@
+● rsyslog.service - System Logging Service
+     Loaded: loaded (/usr/lib/systemd/system/rsyslog.service; enabled; preset: enabled)
+     Active: active (running) since Fri 2026-08-21 04:16:27 UTC; 50s ago
+TriggeredBy: ● syslog.socket
+       Docs: man:rsyslogd(8)
+             man:rsyslog.conf(5)
+             https://www.rsyslog.com/doc/
+    Process: 6798 ExecStartPre=/usr/lib/rsyslog/reload-apparmor-profile (code=exited, status=0/SUCCESS)
+   Main PID: 6806 (rsyslogd)
+      Tasks: 10 (limit: 9178)
+     Memory: 1.7M (peak: 5.0M)
+        CPU: 207ms
+     CGroup: /system.slice/rsyslog.service
+             └─6806 /usr/sbin/rsyslogd -n -iNONE
+
+Aug 21 04:16:27 ip-172-31-10-161 systemd[1]: Starting rsyslog.service - System Logging Service...
+Aug 21 04:16:27 ip-172-31-10-161 systemd[1]: Started rsyslog.service - System Logging Service.
+Aug 21 04:16:27 ip-172-31-10-161 rsyslogd[6806]: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2312.0]
+Aug 21 04:16:27 ip-172-31-10-161 rsyslogd[6806]: rsyslogd's groupid changed to 102
+Aug 21 04:16:27 ip-172-31-10-161 rsyslogd[6806]: rsyslogd's userid changed to 102
+Aug 21 04:16:27 ip-172-31-10-161 rsyslogd[6806]: [origin software="rsyslogd" swVersion="8.2312.0" x-pid="6806" x-info="https://www.rsyslog.com"] start

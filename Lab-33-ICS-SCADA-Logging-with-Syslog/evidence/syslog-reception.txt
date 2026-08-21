@@ -1,0 +1,8 @@
+2026-08-21T04:17:02.685406+00:00 ip-172-31-10-161 ics-simulator: PLC-01: Process started
+2026-08-21T04:17:02.690506+00:00 ip-172-31-10-161 ics-simulator: PLC-01: Temperature=72C
+2026-08-21T04:17:02.695197+00:00 ip-172-31-10-161 ics-simulator: PLC-01: Pressure=4.2bar
+2026-08-21T04:17:02.698968+00:00 ip-172-31-10-161 ics-simulator: HMI-01: Operator login successful
+2026-08-21T04:17:02.702981+00:00 ip-172-31-10-161 ics-simulator: SCADA-01: Communication with PLC-01 established
+2026-08-21T04:17:02.706823+00:00 ip-172-31-10-161 ics-simulator: PLC-01: Digital input changed
+2026-08-21T04:17:02.710330+00:00 ip-172-31-10-161 ics-simulator: SCADA-01: Process monitoring active
+2026-08-21T04:19:30.974560+00:00 ip-172-31-10-161 ics-remote-test PLC-02: Remote Syslog test message
