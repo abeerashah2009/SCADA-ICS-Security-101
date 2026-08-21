@@ -1,0 +1,16 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-08-21 01:35 UTC
+Nmap scan report for ip-172-31-10-1.ec2.internal (172.31.10.1)
+Host is up (0.000067s latency).
+MAC Address: 0A:78:67:64:4C:BD (Unknown)
+Nmap scan report for ip-172-31-10-31.ec2.internal (172.31.10.31)
+Host is up (0.000073s latency).
+MAC Address: 0A:FF:C8:84:82:11 (Unknown)
+Nmap scan report for ip-172-31-10-151.ec2.internal (172.31.10.151)
+Host is up (0.000057s latency).
+MAC Address: 0A:FF:F4:54:86:5F (Unknown)
+Nmap scan report for ip-172-31-10-187.ec2.internal (172.31.10.187)
+Host is up (0.000079s latency).
+MAC Address: 0A:FF:CC:EE:2A:A5 (Unknown)
+Nmap scan report for ip-172-31-10-102.ec2.internal (172.31.10.102)
+Host is up.
+Nmap done: 256 IP addresses (5 hosts up) scanned in 1.89 seconds

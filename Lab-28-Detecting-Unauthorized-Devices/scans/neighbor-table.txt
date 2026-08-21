@@ -1,0 +1,2 @@
+172.31.10.1 lladdr 0a:78:67:64:4c:bd REACHABLE 
+172.31.10.151 lladdr 0a:ff:f4:54:86:5f REACHABLE 
