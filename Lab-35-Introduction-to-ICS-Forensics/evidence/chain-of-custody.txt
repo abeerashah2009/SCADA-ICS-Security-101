@@ -1,0 +1,49 @@
+LAB 35 — ICS FORENSIC CHAIN OF CUSTODY
+======================================
+
+Case ID:
+LAB35-ICS-FORENSICS-001
+
+Evidence Collection Date:
+2026-08-22
+
+Evidence Source:
+AWS EC2 Ubuntu 24.04.3 LTS laboratory system
+
+Collection Host:
+ip-172-31-10-63
+
+Collector:
+Ubuntu laboratory user
+
+Purpose:
+Collection of volatile and system-level forensic information
+for an ICS forensic investigation exercise.
+
+Evidence Items:
+1. evidence/system-info.txt
+2. evidence/forensic-system-state.txt
+
+Collection Method:
+Evidence was collected using read-only system interrogation
+commands and shell-based collection scripts where possible.
+
+Integrity Method:
+SHA-256 cryptographic hashes are generated for collected
+evidence files.
+
+Handling Requirements:
+- Preserve original evidence files.
+- Do not modify collected evidence after hashing.
+- Record any future analysis performed on copies.
+- Maintain the associated SHA-256 hashes.
+- Document any transfer or access to the evidence.
+
+Operational Consideration:
+This laboratory uses a simulated environment. In a production
+ICS environment, forensic collection must minimize disruption
+to PLC, HMI, SCADA, historian, engineering workstation, and
+network operations.
+
+Chain-of-Custody Status:
+Initial collection completed.

@@ -1,0 +1,53 @@
+LAB 35 — ICS FORENSIC EVIDENCE SUMMARY
+======================================
+
+System:
+Ubuntu 24.04.3 LTS on AWS EC2
+
+Primary Evidence Collected:
+- System identification
+- Hostname and operating system information
+- Kernel information
+- System uptime
+- Network interfaces
+- Disk and filesystem information
+- Mounted filesystems
+- Running services
+- Current users
+- Login history
+- Network sockets
+- Routing table
+- DNS configuration
+- Running processes
+- rsyslog service status
+- Recent journal events
+
+Forensic Importance:
+These artifacts provide a baseline view of the system state
+at the time of collection. They can assist an investigator in
+identifying unexpected users, services, network connections,
+processes, configuration changes, and system activity.
+
+ICS Relevance:
+In an ICS environment, equivalent evidence may exist on:
+- PLCs
+- HMIs
+- SCADA servers
+- Engineering workstations
+- Historians
+- Network security devices
+- Industrial switches
+- Remote-access systems
+- Centralized logging servers
+
+Integrity:
+SHA-256 hashes were generated for the collected evidence.
+
+Limitation:
+This is a controlled AWS laboratory environment and does not
+represent a production industrial control system.
+
+Conclusion:
+The collected artifacts establish a basic forensic snapshot
+that can be preserved, hashed, reviewed, and compared during
+further investigation.

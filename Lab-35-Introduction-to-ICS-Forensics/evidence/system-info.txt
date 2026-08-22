@@ -1,0 +1,131 @@
+========================================
+LAB 35 - ICS FORENSIC SYSTEM INFORMATION
+========================================
+
+===== DATE =====
+Sat Aug 22 02:25:31 UTC 2026
+
+===== HOSTNAME =====
+ip-172-31-10-63
+
+===== OPERATING SYSTEM =====
+Ubuntu 24.04.3 LTS
+
+===== KERNEL =====
+Linux ip-172-31-10-63 6.14.0-1018-aws #18~24.04.1-Ubuntu SMP Mon Nov 24 19:46:27 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+===== SYSTEM UPTIME =====
+ 02:25:31 up 2 min,  3 users,  load average: 1.23, 0.75, 0.30
+
+===== NETWORK INTERFACES =====
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+ens5             UP             172.31.10.63/24 fe80::8ff:d3ff:fe24:ef79/64 
+docker0          DOWN           172.17.0.1/16 
+
+===== DISK INFORMATION =====
+NAME         MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0          7:0    0  91.7M  1 loop /snap/gtk-common-themes/1535
+loop1          7:1    0  27.6M  1 loop /snap/amazon-ssm-agent/11797
+loop2          7:2    0    74M  1 loop /snap/core22/2163
+loop3          7:3    0     4K  1 loop /snap/bare/5
+loop4          7:4    0 226.7M  1 loop /snap/thunderbird/877
+loop5          7:5    0  50.9M  1 loop /snap/snapd/25577
+loop6          7:6    0 250.6M  1 loop /snap/firefox/7423
+loop7          7:7    0 516.2M  1 loop /snap/gnome-42-2204/226
+loop8          7:8    0  73.9M  1 loop /snap/core22/2133
+loop9          7:9    0  50.8M  1 loop /snap/snapd/25202
+nvme0n1      259:0    0    30G  0 disk 
+├─nvme0n1p1  259:2    0    29G  0 part /
+├─nvme0n1p14 259:3    0     4M  0 part 
+├─nvme0n1p15 259:4    0   106M  0 part /boot/efi
+└─nvme0n1p16 259:5    0   913M  0 part /boot
+nvme1n1      259:1    0    30G  0 disk 
+
+===== MOUNTED FILESYSTEMS =====
+TARGET                         SOURCE          FSTYPE          OPTIONS
+/                              /dev/nvme0n1p1  ext4            rw,relatime,discard,errors=remount-ro,commit=30
+├─/dev                         devtmpfs        devtmpfs        rw,nosuid,noexec,relatime,size=4004304k,nr_inodes=1001076,mode=755,inode64
+│ ├─/dev/shm                   tmpfs           tmpfs           rw,nosuid,nodev,inode64
+│ ├─/dev/pts                   devpts          devpts          rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000
+│ ├─/dev/hugepages             hugetlbfs       hugetlbfs       rw,nosuid,nodev,relatime,pagesize=2M
+│ └─/dev/mqueue                mqueue          mqueue          rw,nosuid,nodev,noexec,relatime
+├─/proc                        proc            proc            rw,nosuid,nodev,noexec,relatime
+│ └─/proc/sys/fs/binfmt_misc   systemd-1       autofs          rw,relatime,fd=32,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=562
+│   └─/proc/sys/fs/binfmt_misc binfmt_misc     binfmt_misc     rw,nosuid,nodev,noexec,relatime
+├─/sys                         sysfs           sysfs           rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/kernel/security       securityfs      securityfs      rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/fs/cgroup             cgroup2         cgroup2         rw,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot
+│ ├─/sys/fs/pstore             pstore          pstore          rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/firmware/efi/efivars  efivarfs        efivarfs        rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/fs/bpf                bpf             bpf             rw,nosuid,nodev,noexec,relatime,mode=700
+│ ├─/sys/kernel/debug          debugfs         debugfs         rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/kernel/tracing        tracefs         tracefs         rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/kernel/config         configfs        configfs        rw,nosuid,nodev,noexec,relatime
+│ └─/sys/fs/fuse/connections   fusectl         fusectl         rw,nosuid,nodev,noexec,relatime
+├─/run                         tmpfs           tmpfs           rw,nosuid,nodev,size=1606236k,nr_inodes=819200,mode=755,inode64
+│ ├─/run/lock                  tmpfs           tmpfs           rw,nosuid,nodev,noexec,relatime,size=5120k,inode64
+│ └─/run/user/1000             tmpfs           tmpfs           rw,nosuid,nodev,relatime,size=803116k,nr_inodes=200779,mode=700,uid=1000,gid=1000,inode64
+│   ├─/run/user/1000/gvfs      gvfsd-fuse      fuse.gvfsd-fuse rw,nosuid,nodev,relatime,user_id=1000,group_id=1000
+│   └─/run/user/1000/doc       portal          fuse.portal     rw,nosuid,nodev,relatime,user_id=1000,group_id=1000
+├─/snap/amazon-ssm-agent/11797 /dev/loop1      squashfs        ro,nodev,relatime,errors=continue,threads=single
+├─/snap/gtk-common-themes/1535 /dev/loop0      squashfs        ro,nodev,relatime,errors=continue,threads=single
+├─/snap/core22/2163            /dev/loop2      squashfs        ro,nodev,relatime,errors=continue,threads=single
+├─/snap/thunderbird/877        /dev/loop4      squashfs        ro,nodev,relatime,errors=continue,threads=single
+├─/snap/bare/5                 /dev/loop3      squashfs        ro,nodev,relatime,errors=continue,threads=single
+├─/snap/snapd/25577            /dev/loop5      squashfs        ro,nodev,relatime,errors=continue,threads=single
+├─/snap/firefox/7423           /dev/loop6      squashfs        ro,nodev,relatime,errors=continue,threads=single
+├─/snap/gnome-42-2204/226      /dev/loop7      squashfs        ro,nodev,relatime,errors=continue,threads=single
+├─/snap/core22/2133            /dev/loop8      squashfs        ro,nodev,relatime,errors=continue,threads=single
+├─/snap/snapd/25202            /dev/loop9      squashfs        ro,nodev,relatime,errors=continue,threads=single
+└─/boot                        /dev/nvme0n1p16 ext4            rw,relatime
+  └─/boot/efi                  /dev/nvme0n1p15 vfat            rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro
+
+===== RUNNING SERVICES =====
+  UNIT                                           LOAD   ACTIVE SUB     DESCRIPTION
+  accounts-daemon.service                        loaded active running Accounts Service
+  acpid.service                                  loaded active running ACPI event daemon
+  amazon-cloudwatch-agent.service                loaded active running Amazon CloudWatch Agent
+  anacron.service                                loaded active running Run anacron jobs
+  atd.service                                    loaded active running Deferred execution scheduler
+  avahi-daemon.service                           loaded active running Avahi mDNS/DNS-SD Stack
+  chrony.service                                 loaded active running chrony, an NTP client/server
+  colord.service                                 loaded active running Manage, Install and Generate Color Profiles
+  containerd.service                             loaded active running containerd container runtime
+  cron.service                                   loaded active running Regular background program processing daemon
+  dbus.service                                   loaded active running D-Bus System Message Bus
+  dcvserver.service                              loaded active running Amazon DCV server daemon
+  dcvsessionlauncher.service                     loaded active running Amazon DCV session launcher daemon
+  docker.service                                 loaded active running Docker Application Container Engine
+  gdm.service                                    loaded active running GNOME Display Manager
+  health-monitor.service                         loaded active running Enhanced Health Monitor (900s intervals)
+  irqbalance.service                             loaded active running irqbalance daemon
+  kerneloops.service                             loaded active running Tool to automatically collect and submit kernel crash signatures
+  ModemManager.service                           loaded active running Modem Manager
+  multipathd.service                             loaded active running Device-Mapper Multipath Device Controller
+  networkd-dispatcher.service                    loaded active running Dispatcher daemon for systemd-networkd
+  NetworkManager.service                         loaded active running Network Manager
+  packagekit.service                             loaded active running PackageKit Daemon
+  polkit.service                                 loaded active running Authorization Manager
+  power-profiles-daemon.service                  loaded active running Power Profiles daemon
+  rsyslog.service                                loaded active running System Logging Service
+  rtkit-daemon.service                           loaded active running RealtimeKit Scheduling Policy Service
+  serial-getty@ttyS0.service                     loaded active running Serial Getty on ttyS0
+  snap.amazon-ssm-agent.amazon-ssm-agent.service loaded active running Service for snap application amazon-ssm-agent.amazon-ssm-agent
+  ssh.service                                    loaded active running OpenBSD Secure Shell server
+  switcheroo-control.service                     loaded active running Switcheroo Control Proxy service
+  systemd-journald.service                       loaded active running Journal Service
+  systemd-logind.service                         loaded active running User Login Management
+  systemd-networkd.service                       loaded active running Network Configuration
+  systemd-oomd.service                           loaded active running Userspace Out-Of-Memory (OOM) Killer
+  systemd-resolved.service                       loaded active running Network Name Resolution
+  systemd-udevd.service                          loaded active running Rule-based Manager for Device Events and Files
+  udisks2.service                                loaded active running Disk Manager
+  upower.service                                 loaded active running Daemon for power management
+  user@1000.service                              loaded active running User Manager for UID 1000
+  wpa_supplicant.service                         loaded active running WPA supplicant
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+41 loaded units listed.

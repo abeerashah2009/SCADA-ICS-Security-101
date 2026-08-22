@@ -1,0 +1,240 @@
+========================================
+LAB 35 - ICS FORENSIC EVIDENCE
+========================================
+
+===== SYSTEM IDENTITY =====
+ Static hostname: ip-172-31-10-63
+       Icon name: computer-vm
+         Chassis: vm 🖴
+      Machine ID: ec2eee9431b50768aed82ae045f4c73b
+         Boot ID: 5ca5fd2164114692ab9bc185f9a2b702
+  Virtualization: amazon
+Operating System: Ubuntu 24.04.3 LTS
+          Kernel: Linux 6.14.0-1018-aws
+    Architecture: x86-64
+ Hardware Vendor: Amazon EC2
+  Hardware Model: t3a.large
+Firmware Version: 1.0
+   Firmware Date: Mon 2017-10-16
+    Firmware Age: 8y 10month 5d
+
+===== CURRENT USERS =====
+ubuntu   seat0        2026-08-22 02:23 (login screen)
+ubuntu   :0           2026-08-22 02:23 (:0)
+ubuntu   pts/0        2026-08-22 02:24 (39.43.149.125)
+ubuntu   pts/2        2026-08-22 02:26 (39.43.149.125)
+
+===== LOGIN HISTORY =====
+ubuntu   pts/0        39.43.149.125    Sat Aug 22 02:24   still logged in
+ubuntu   :0           :0               Sat Aug 22 02:23   still logged in
+ubuntu   seat0        login screen     Sat Aug 22 02:23   still logged in
+reboot   system boot  6.14.0-1018-aws  Sat Aug 22 02:23   still running
+ubuntu   pts/0        154.192.51.197   Fri Jun 19 18:23 - crash (63+08:00)
+ubuntu   :0           :0               Fri Jun 19 18:16 - crash (63+08:06)
+ubuntu   seat0        login screen     Fri Jun 19 18:16 - crash (63+08:06)
+reboot   system boot  6.14.0-1018-aws  Fri Jun 19 18:15   still running
+ubuntu   pts/0        154.192.2.6      Sat Jan 24 06:08 - crash (146+12:06)
+ubuntu   :0           :0               Sat Jan 24 06:07 - crash (146+12:08)
+
+wtmp begins Wed Dec  3 13:16:24 2025
+
+===== NETWORK CONNECTIONS =====
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                                                                 
+udp   UNCONN 0      0            0.0.0.0:53154      0.0.0.0:*    users:(("avahi-daemon",pid=663,fd=14)) uid:116 ino:7387 sk:1 cgroup:/system.slice/avahi-daemon.service <->             
+udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=415,fd=16)) uid:991 ino:5213 sk:2 cgroup:/system.slice/systemd-resolved.service <->      
+udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=415,fd=14)) uid:991 ino:5211 sk:3 cgroup:/system.slice/systemd-resolved.service <->      
+udp   UNCONN 0      0            0.0.0.0:8443       0.0.0.0:*    users:(("dcvserver",pid=728,fd=11)) uid:997 ino:9794 sk:4 cgroup:/system.slice/dcvserver.service <->                   
+udp   UNCONN 0      0          127.0.0.1:323        0.0.0.0:*    users:(("chronyd",pid=913,fd=5)) ino:8441 sk:5 cgroup:/system.slice/chrony.service <->                                 
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*    users:(("avahi-daemon",pid=663,fd=12)) uid:116 ino:7385 sk:6 cgroup:/system.slice/avahi-daemon.service <->             
+udp   UNCONN 0      0               [::]:8443          [::]:*    users:(("dcvserver",pid=728,fd=12)) uid:997 ino:9795 sk:7 cgroup:/system.slice/dcvserver.service v6only:1 <->          
+udp   UNCONN 0      0              [::1]:323           [::]:*    users:(("chronyd",pid=913,fd=6)) ino:8442 sk:8 cgroup:/system.slice/chrony.service v6only:1 <->                        
+udp   UNCONN 0      0               [::]:45599         [::]:*    users:(("avahi-daemon",pid=663,fd=15)) uid:116 ino:7388 sk:9 cgroup:/system.slice/avahi-daemon.service v6only:1 <->    
+udp   UNCONN 0      0               [::]:5353          [::]:*    users:(("avahi-daemon",pid=663,fd=13)) uid:116 ino:7386 sk:a cgroup:/system.slice/avahi-daemon.service v6only:1 <->    
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=415,fd=15)) uid:991 ino:5212 sk:b cgroup:/system.slice/systemd-resolved.service <->      
+tcp   LISTEN 0      128        127.0.0.1:6010       0.0.0.0:*    users:(("sshd",pid=2884,fd=8)) uid:1000 ino:16133 sk:c cgroup:/user.slice/user-1000.slice/session-3.scope <->          
+tcp   LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=2766,fd=3),("systemd",pid=1,fd=181)) ino:6562 sk:d cgroup:/system.slice/ssh.socket <->              
+tcp   LISTEN 0      10           0.0.0.0:8443       0.0.0.0:*    users:(("dcvserver",pid=728,fd=9)) uid:997 ino:9792 sk:e cgroup:/system.slice/dcvserver.service <->                    
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=415,fd=17)) uid:991 ino:5214 sk:f cgroup:/system.slice/systemd-resolved.service <->      
+tcp   LISTEN 0      128            [::1]:6010          [::]:*    users:(("sshd",pid=2884,fd=7)) uid:1000 ino:16132 sk:10 cgroup:/user.slice/user-1000.slice/session-3.scope v6only:1 <->
+tcp   LISTEN 0      4096            [::]:22            [::]:*    users:(("sshd",pid=2766,fd=4),("systemd",pid=1,fd=182)) ino:6081 sk:11 cgroup:/system.slice/ssh.socket v6only:1 <->    
+tcp   LISTEN 0      10              [::]:8443          [::]:*    users:(("dcvserver",pid=728,fd=10)) uid:997 ino:9793 sk:12 cgroup:/system.slice/dcvserver.service v6only:1 <->         
+
+===== ROUTING TABLE =====
+default via 172.31.10.1 dev ens5 proto dhcp src 172.31.10.63 metric 100 
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
+172.31.10.0/24 dev ens5 proto kernel scope link src 172.31.10.63 metric 100 
+
+===== DNS CONFIGURATION =====
+Global
+         Protocols: -LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+  resolv.conf mode: stub
+
+Link 2 (ens5)
+    Current Scopes: DNS
+         Protocols: +DefaultRoute -LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+Current DNS Server: 172.31.0.2
+       DNS Servers: 172.31.0.2
+        DNS Domain: ec2.internal
+
+Link 3 (docker0)
+    Current Scopes: none
+         Protocols: -DefaultRoute -LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+
+===== RUNNING PROCESSES =====
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root        4848  200  0.0  11452  4612 pts/2    R+   02:26   0:00 ps aux --sort=-%cpu
+ubuntu      3827 95.7  3.5 690668 284820 ?       SNl  02:24   1:36 /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
+root        4834 34.2  0.0  17280  7840 ?        Ss   02:26   0:00 /usr/lib/systemd/systemd-hostnamed
+ubuntu      2025  3.6  4.2 3839272 338108 ?      Ssl  02:23   0:06 /usr/bin/gnome-shell
+ubuntu      2272  3.5  1.8 1551948 150904 ?      Sl   02:23   0:06 /usr/lib/x86_64-linux-gnu/dcv/dcvagent --session-id console --mode full --settings-path /etc/dcv/dcv.conf --log-dir /var/log/dcv --log-level INFO --log-rotate-at-startup
+ubuntu      4806  2.5  0.1  99080 13516 pts/0    S+   02:26   0:00 curl --location https://cloudbot.alnafi.org/direct-log-hit --header X-API-Key: :Cl0MZ#/Zr4)Ap-r-3d%9,MJm!QWjW6H}[\^ --header Content-Type: application/x-www-form-urlencoded --data-urlencode filename=157720_abeerashah2009_gmail_com_35_Introduction_to_ICS_Forensics_lab_IP_52_72_6_23 --max-time 15 --silent --show-error --write-out \n[%{http_code}] API notification sent
+ubuntu      2388  2.3  0.3 345708 31844 ?        Sl   02:23   0:04 /usr/libexec/ibus-extension-gtk3
+root           1  1.9  0.1  23312 14536 ?        Ss   02:23   0:04 /sbin/init
+root        4826  1.8  0.0  17476  7376 pts/0    S+   02:26   0:00 sudo bash -c  { echo "========================================" echo "LAB 35 - ICS FORENSIC EVIDENCE" echo "========================================"  echo echo "===== SYSTEM IDENTITY =====" hostnamectl  echo echo "===== CURRENT USERS =====" who  echo echo "===== LOGIN HISTORY =====" last -n 10  echo echo "===== NETWORK CONNECTIONS =====" ss -tulpen  echo echo "===== ROUTING TABLE =====" ip route  echo echo "===== DNS CONFIGURATION =====" resolvectl status 2>/dev/null | head -40  echo echo "===== RUNNING PROCESSES =====" ps aux --sort=-%cpu | head -30  echo echo "===== SYSTEMD SERVICES =====" systemctl list-units --type=service --state=running --no-pager  echo echo "===== RSYSLOG STATUS =====" systemctl status rsyslog --no-pager  echo echo "===== RECENT JOURNAL EVENTS =====" journalctl -n 50 --no-pager  } > evidence/forensic-system-state.txt 
+ubuntu      1819  1.6  0.2 118080 17400 ?        S<Lsl 02:23   0:02 /usr/bin/pipewire-pulse
+ubuntu      1813  1.5  0.1 109848 10084 ?        S<sl 02:23   0:02 /usr/bin/pipewire
+dcv          728  1.3  0.6 634412 48780 ?        Sl   02:23   0:02 /usr/lib/x86_64-linux-gnu/dcv/dcvserver --service
+ubuntu      1845  0.7  1.1 2348316 90028 tty2    Sl+  02:23   0:01 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -novtswitch -verbose 3
+root        1148  0.5  1.0 1948448 87116 ?       Ssl  02:23   0:01 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+cwagent     2065  0.4  1.3 1412048 107452 ?      Ssl  02:23   0:00 /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent -config /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.toml -envconfig /opt/aws/amazon-cloudwatch-agent/etc/env-config.json -otelconfig /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.yaml -pidfile /opt/aws/amazon-cloudwatch-agent/var/amazon-cloudwatch-agent.pid
+root         882  0.4  0.2 1756636 21432 ?       Ssl  02:23   0:00 /snap/amazon-ssm-agent/11797/amazon-ssm-agent
+ubuntu      1801  0.4  0.1  21028 12504 ?        Ss   02:23   0:00 /usr/lib/systemd/systemd --user
+ubuntu      2666  0.4  0.7 2798484 58104 ?       Sl   02:23   0:00 gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js -E -P /usr/share/gnome-shell/extensions/ding@rastersoft.com/app
+message+     664  0.3  0.0  12016  7168 ?        Ss   02:23   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+ubuntu      1824  0.3  0.0  10648  6620 ?        Ss   02:23   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         133  0.3  0.2  51200 17124 ?        S<s  02:23   0:00 /usr/lib/systemd/systemd-journald
+root         200  0.2  0.1  27780  9076 ?        Ss   02:23   0:00 /usr/lib/systemd/systemd-udevd
+polkitd      676  0.2  0.1 314564 11868 ?        Ssl  02:23   0:00 /usr/lib/polkit-1/polkitd --no-debug
+ubuntu      2660  0.2  1.3 1359980 110696 ?      Ssl  02:23   0:00 /usr/libexec/xdg-desktop-portal-gnome
+ubuntu      2241  0.2  0.7 895612 60824 ?        Sl   02:23   0:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+ubuntu      2055  0.1  1.2 1115484 101172 ?      Sl   02:23   0:00 /usr/libexec/mutter-x11-frames
+root          17  0.1  0.0      0     0 ?        I    02:23   0:00 [rcu_sched]
+ubuntu      2888  0.1  0.0   7740  3548 ?        Ss   02:24   0:00 bash -c while true; do sleep 1;head -v -n 8 /proc/meminfo; head -v -n 2 /proc/stat /proc/version /proc/uptime /proc/loadavg /proc/sys/fs/file-nr /proc/sys/kernel/hostname; tail -v -n 32 /proc/net/dev;echo '==> /proc/who <==';who;echo '==> /proc/end <==';echo '##Moba##'; done
+root         903  0.1  0.5 1719560 45852 ?       Ssl  02:23   0:00 /usr/bin/containerd
+
+===== SYSTEMD SERVICES =====
+  UNIT                                           LOAD   ACTIVE SUB     DESCRIPTION
+  accounts-daemon.service                        loaded active running Accounts Service
+  acpid.service                                  loaded active running ACPI event daemon
+  amazon-cloudwatch-agent.service                loaded active running Amazon CloudWatch Agent
+  anacron.service                                loaded active running Run anacron jobs
+  atd.service                                    loaded active running Deferred execution scheduler
+  avahi-daemon.service                           loaded active running Avahi mDNS/DNS-SD Stack
+  chrony.service                                 loaded active running chrony, an NTP client/server
+  colord.service                                 loaded active running Manage, Install and Generate Color Profiles
+  containerd.service                             loaded active running containerd container runtime
+  cron.service                                   loaded active running Regular background program processing daemon
+  dbus.service                                   loaded active running D-Bus System Message Bus
+  dcvserver.service                              loaded active running Amazon DCV server daemon
+  dcvsessionlauncher.service                     loaded active running Amazon DCV session launcher daemon
+  docker.service                                 loaded active running Docker Application Container Engine
+  gdm.service                                    loaded active running GNOME Display Manager
+  health-monitor.service                         loaded active running Enhanced Health Monitor (900s intervals)
+  irqbalance.service                             loaded active running irqbalance daemon
+  kerneloops.service                             loaded active running Tool to automatically collect and submit kernel crash signatures
+  ModemManager.service                           loaded active running Modem Manager
+  multipathd.service                             loaded active running Device-Mapper Multipath Device Controller
+  networkd-dispatcher.service                    loaded active running Dispatcher daemon for systemd-networkd
+  NetworkManager.service                         loaded active running Network Manager
+  packagekit.service                             loaded active running PackageKit Daemon
+  polkit.service                                 loaded active running Authorization Manager
+  power-profiles-daemon.service                  loaded active running Power Profiles daemon
+  rsyslog.service                                loaded active running System Logging Service
+  rtkit-daemon.service                           loaded active running RealtimeKit Scheduling Policy Service
+  serial-getty@ttyS0.service                     loaded active running Serial Getty on ttyS0
+  snap.amazon-ssm-agent.amazon-ssm-agent.service loaded active running Service for snap application amazon-ssm-agent.amazon-ssm-agent
+  ssh.service                                    loaded active running OpenBSD Secure Shell server
+  switcheroo-control.service                     loaded active running Switcheroo Control Proxy service
+  systemd-hostnamed.service                      loaded active running Hostname Service
+  systemd-journald.service                       loaded active running Journal Service
+  systemd-logind.service                         loaded active running User Login Management
+  systemd-networkd.service                       loaded active running Network Configuration
+  systemd-oomd.service                           loaded active running Userspace Out-Of-Memory (OOM) Killer
+  systemd-resolved.service                       loaded active running Network Name Resolution
+  systemd-udevd.service                          loaded active running Rule-based Manager for Device Events and Files
+  udisks2.service                                loaded active running Disk Manager
+  upower.service                                 loaded active running Daemon for power management
+  user@1000.service                              loaded active running User Manager for UID 1000
+  wpa_supplicant.service                         loaded active running WPA supplicant
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+42 loaded units listed.
+
+===== RSYSLOG STATUS =====
+● rsyslog.service - System Logging Service
+     Loaded: loaded (/usr/lib/systemd/system/rsyslog.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2026-08-22 02:23:19 UTC; 3min 14s ago
+TriggeredBy: ● syslog.socket
+       Docs: man:rsyslogd(8)
+             man:rsyslog.conf(5)
+             https://www.rsyslog.com/doc/
+   Main PID: 748 (rsyslogd)
+      Tasks: 4 (limit: 9178)
+     Memory: 3.4M (peak: 5.1M)
+        CPU: 307ms
+     CGroup: /system.slice/rsyslog.service
+             └─748 /usr/sbin/rsyslogd -n -iNONE
+
+Aug 22 02:23:18 ip-172-31-10-63 systemd[1]: Starting rsyslog.service - System Logging Service...
+Aug 22 02:23:19 ip-172-31-10-63 systemd[1]: Started rsyslog.service - System Logging Service.
+Aug 22 02:23:19 ip-172-31-10-63 rsyslogd[748]: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2312.0]
+Aug 22 02:23:19 ip-172-31-10-63 rsyslogd[748]: rsyslogd's groupid changed to 102
+Aug 22 02:23:19 ip-172-31-10-63 rsyslogd[748]: rsyslogd's userid changed to 102
+Aug 22 02:23:19 ip-172-31-10-63 rsyslogd[748]: [origin software="rsyslogd" swVersion="8.2312.0" x-pid="748" x-info="https://www.rsyslog.com"] start
+Aug 22 02:23:21 ip-172-31-10-63 systemd[1]: rsyslog.service: Sent signal SIGHUP to main process 748 (rsyslogd) on client request.
+Aug 22 02:23:21 ip-172-31-10-63 rsyslogd[748]: [origin software="rsyslogd" swVersion="8.2312.0" x-pid="748" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
+
+===== RECENT JOURNAL EVENTS =====
+Aug 22 02:24:18 ip-172-31-10-63 gnome-shell[2025]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Aug 22 02:24:18 ip-172-31-10-63 gnome-shell[2025]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Aug 22 02:24:18 ip-172-31-10-63 gnome-shell[2025]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Aug 22 02:24:18 ip-172-31-10-63 gnome-shell[2025]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Aug 22 02:24:18 ip-172-31-10-63 gnome-shell[2025]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Aug 22 02:24:18 ip-172-31-10-63 gnome-shell[2025]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Aug 22 02:24:18 ip-172-31-10-63 gnome-shell[2025]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Aug 22 02:24:18 ip-172-31-10-63 gnome-shell[2025]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Aug 22 02:24:18 ip-172-31-10-63 gnome-shell[2025]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Aug 22 02:24:18 ip-172-31-10-63 gnome-shell[2025]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Aug 22 02:24:18 ip-172-31-10-63 gnome-shell[2025]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Aug 22 02:24:18 ip-172-31-10-63 gnome-shell[2025]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Aug 22 02:24:18 ip-172-31-10-63 gnome-shell[2025]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Aug 22 02:24:18 ip-172-31-10-63 gnome-shell[2025]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Aug 22 02:24:18 ip-172-31-10-63 gnome-shell[2025]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Aug 22 02:24:18 ip-172-31-10-63 gnome-shell[2025]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Aug 22 02:24:18 ip-172-31-10-63 gnome-shell[2025]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Aug 22 02:24:19 ip-172-31-10-63 tracker-miner-fs-3[2897]: (tracker-extract-3:2897): GLib-GIO-WARNING **: 02:24:19.689: Error creating IO channel for /proc/self/mountinfo: Invalid argument (g-io-error-quark, 13)
+Aug 22 02:24:20 ip-172-31-10-63 sshd[2773]: Accepted publickey for ubuntu from 39.43.149.125 port 50340 ssh2: RSA SHA256:EsiKvp1u9kj3kWDf7BG8N/JF+CX8/6uYPhL3qgTLkbg
+Aug 22 02:24:20 ip-172-31-10-63 sshd[2773]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+Aug 22 02:24:20 ip-172-31-10-63 systemd-logind[685]: New session 4 of user ubuntu.
+Aug 22 02:24:20 ip-172-31-10-63 systemd[1]: Started session-4.scope - Session 4 of User ubuntu.
+Aug 22 02:24:20 ip-172-31-10-63 systemd[1801]: Starting update-notifier-release.service - Notification regarding a new release of Ubuntu...
+Aug 22 02:24:35 ip-172-31-10-63 tracker-miner-fs-3[3421]: (tracker-extract-3:3421): GLib-GIO-WARNING **: 02:24:35.591: Error creating IO channel for /proc/self/mountinfo: Invalid argument (g-io-error-quark, 13)
+Aug 22 02:24:42 ip-172-31-10-63 check-new-release-gtk[3018]: WARNING:root:timeout reached, exiting
+Aug 22 02:24:42 ip-172-31-10-63 systemd[1801]: Finished update-notifier-release.service - Notification regarding a new release of Ubuntu.
+Aug 22 02:24:42 ip-172-31-10-63 systemd[1801]: update-notifier-release.service: Consumed 1.124s CPU time.
+Aug 22 02:24:44 ip-172-31-10-63 systemd[1801]: Started app-gnome-ubuntu\x2dadvantage\x2dnotification-3631.scope - Application launched by gnome-session-binary.
+Aug 22 02:24:44 ip-172-31-10-63 systemd[1801]: Started app-gnome-update\x2dnotifier-3627.scope - Application launched by gnome-session-binary.
+Aug 22 02:24:48 ip-172-31-10-63 pkexec[3715]: pam_unix(polkit-1:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Aug 22 02:24:48 ip-172-31-10-63 pkexec[3715]: ubuntu: Executing command [USER=root] [TTY=unknown] [CWD=/home/ubuntu] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Aug 22 02:24:49 ip-172-31-10-63 geoclue[2578]: Service not used for 60 seconds. Shutting down..
+Aug 22 02:24:49 ip-172-31-10-63 systemd[1]: geoclue.service: Deactivated successfully.
+Aug 22 02:24:49 ip-172-31-10-63 update-notifier.desktop[3729]: [90B blob data]
+Aug 22 02:24:49 ip-172-31-10-63 update-notifier.desktop[3729]: [163B blob data]
+Aug 22 02:24:49 ip-172-31-10-63 update-notifier.desktop[3729]: [101B blob data]
+Aug 22 02:25:01 ip-172-31-10-63 CRON[3919]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Aug 22 02:25:01 ip-172-31-10-63 CRON[3920]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Aug 22 02:25:01 ip-172-31-10-63 CRON[3919]: pam_unix(cron:session): session closed for user root
+Aug 22 02:25:06 ip-172-31-10-63 update-notifier.desktop[3648]: WARNING:root:timeout reached, exiting
+Aug 22 02:25:44 ip-172-31-10-63 systemd[1801]: Started app-gnome-org.gnome.DejaDup.Monitor-4428.scope - Application launched by gnome-session-binary.
+Aug 22 02:25:51 ip-172-31-10-63 sshd[4489]: Connection closed by 186.104.89.114 port 45172
+Aug 22 02:26:07 ip-172-31-10-63 sshd[4599]: Connection closed by 186.104.89.114 port 52134
+Aug 22 02:26:33 ip-172-31-10-63 sudo[4826]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/SCADA-ICS-Security-101/Lab-35-Introduction-to-ICS-Forensics ; USER=root ; COMMAND=/usr/bin/bash -c '#012{#012echo "========================================"#012echo "LAB 35 - ICS FORENSIC EVIDENCE"#012echo "========================================"#012#012echo#012echo "===== SYSTEM IDENTITY ====="#012hostnamectl#012#012echo#012echo "===== CURRENT USERS ====="#012who#012#012echo#012echo "===== LOGIN HISTORY ====="#012last -n 10#012#012echo#012echo "===== NETWORK CONNECTIONS ====="#012ss -tulpen#012#012echo#012echo "===== ROUTING TABLE ====="#012ip route#012#012echo#012echo "===== DNS CONFIGURATION ====="#012resolvectl status 2>/dev/null | head -40#012#012echo#012echo "===== RUNNING PROCESSES ====="#012ps aux --sort=-%cpu | head -30#012#012echo#012echo "===== SYSTEMD SERVICES ====="#012systemctl list-units --type=service --state=running --no-pager#012#012echo#012echo "===== RSYSLOG STATUS ====="#012systemctl
+Aug 22 02:26:33 ip-172-31-10-63 sudo[4826]:   ubuntu : (command continued) status rsyslog --no-pager#012#012echo#012echo "===== RECENT JOURNAL EVENTS ====="#012journalctl -n 50 --no-pager#012#012} > evidence/forensic-system-state.txt#012'
+Aug 22 02:26:33 ip-172-31-10-63 sudo[4826]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Aug 22 02:26:33 ip-172-31-10-63 dbus-daemon[664]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.87' (uid=0 pid=4830 comm="hostnamectl" label="unconfined")
+Aug 22 02:26:33 ip-172-31-10-63 systemd[1]: Starting systemd-hostnamed.service - Hostname Service...
+Aug 22 02:26:33 ip-172-31-10-63 dbus-daemon[664]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Aug 22 02:26:33 ip-172-31-10-63 systemd[1]: Started systemd-hostnamed.service - Hostname Service.
