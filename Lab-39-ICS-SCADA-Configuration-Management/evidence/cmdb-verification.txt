@@ -1,0 +1,17 @@
+========================================
+LAB 39 - CMDB DATABASE EVIDENCE
+========================================
+
+Sat Aug 22 03:30:19 UTC 2026
+
+===== DATABASE TABLES =====
+ConfigChanges
+
+===== CONFIGURATION RECORDS =====
+ID  FileName                           DateModified  ChangeDescription                   GitCommit  SHA256                                                          
+--  ---------------------------------  ------------  ----------------------------------  ---------  ----------------------------------------------------------------
+1   configurations/plc/plc_config.txt  2026-08-22    Initial baseline PLC configuration  0948aee    845e9428bbfbadd04c50f7c167d2f71d35c17ffcf59f1b80f67e39b740dd831c
+2   configurations/hmi/hmi_config.xml  2026-08-22    Initial baseline HMI configuration  0948aee    74a1001826592ae7af7bce544e1685fd7ce6952d6bb79b25b0fe41946323dedf
+
+===== DATABASE INTEGRITY =====
+ok
