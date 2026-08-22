@@ -1,0 +1,136 @@
+LAB 38 — ICS/SCADA THREAT INTELLIGENCE
+======================================
+
+SOURCE 1 — SIEMENS PRODUCTCERT
+------------------------------
+
+Advisory:
+SSA-688146
+
+Title:
+Multiple Cross-Site Scripting Vulnerabilities in SIMATIC S7 PLCs Web Server
+
+Publication Date:
+2026-05-12
+
+Last Update:
+2026-07-14
+
+Severity:
+CVSS v3.1: 9.1
+CVSS v4.0: 9.3
+
+Affected Technology:
+Siemens SIMATIC S7 PLC web servers and related products.
+
+Vulnerability:
+Multiple cross-site scripting vulnerabilities.
+
+Relevant CVEs:
+CVE-2026-25786
+CVE-2026-25787
+CVE-2026-25789
+
+Risk:
+An attacker who is able to influence affected web-interface data
+may execute malicious script content in a user's web session.
+Depending on the affected product and user privileges, this could
+create a risk to confidentiality and integrity.
+
+Siemens Remediation:
+- Update affected products to the recommended fixed versions.
+- Restrict TIA project downloads to trusted personnel.
+- Restrict firmware-update privileges to authorized personnel.
+- Protect network access to industrial devices.
+- Follow Siemens Industrial Security guidance.
+
+LAB RELEVANCE:
+The laboratory does not contain a physical Siemens SIMATIC S7 PLC.
+Therefore, the advisory is treated as threat-intelligence research
+rather than a confirmed vulnerability in this Ubuntu host.
+
+However, the same security principles apply to a simulated ICS
+environment:
+- Restrict management interfaces.
+- Use least privilege.
+- Control firmware and configuration changes.
+- Monitor administrative activity.
+- Keep industrial systems patched where supported.
+
+
+SOURCE 2 — CISA ICS ADVISORY
+----------------------------
+
+Advisory:
+ICSA-25-021-02
+
+Title:
+Siemens SIMATIC S7-1200 CPUs
+
+Release Date:
+2025-01-21
+
+Vulnerability:
+Cross-Site Request Forgery (CSRF)
+
+CVSS v4:
+7.2
+
+Risk:
+A successful attack could allow an unauthenticated attacker to
+change the CPU mode by tricking an authenticated user with
+sufficient permissions into interacting with a malicious link.
+
+Affected Products:
+Multiple Siemens SIMATIC S7-1200 CPU models running versions
+prior to V4.7.
+
+Recommended Action:
+- Update affected CPUs to V4.7 or later.
+- Do not click links from untrusted sources.
+- Protect ICS devices from unnecessary network exposure.
+- Use appropriate industrial network security controls.
+
+
+THREAT INTELLIGENCE SOURCES
+---------------------------
+
+Primary sources used:
+
+1. CISA ICS Advisories
+   https://www.cisa.gov/news-events/ics-advisories
+
+2. Siemens ProductCERT Security Advisories
+   https://cert-portal.siemens.com/productcert/
+
+3. Siemens Industrial Security Guidance
+   https://www.siemens.com/industrialsecurity
+
+
+INTELLIGENCE ASSESSMENT
+-----------------------
+
+The selected advisories demonstrate several important ICS
+security risks:
+
+- Vulnerabilities in PLC web interfaces can affect system integrity.
+- User interaction can become part of an attack path.
+- Excessive management privileges increase risk.
+- Firmware and configuration changes require strict authorization.
+- Industrial devices should not be unnecessarily exposed to
+  untrusted networks.
+
+The lab environment should therefore emphasize network
+segmentation, access control, patch management, monitoring,
+least privilege, and controlled administrative activity.
+
+CONCLUSION
+----------
+
+Threat intelligence should be continuously reviewed and compared
+against the actual ICS asset inventory.
+
+A vulnerability should not automatically be considered applicable
+to the laboratory. Applicability must be determined by comparing
+the affected vendor, product, version, service, and network
+exposure against the actual environment.

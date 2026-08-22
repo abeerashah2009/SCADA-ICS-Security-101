@@ -1,0 +1,220 @@
+LAB 38 — THREAT INTELLIGENCE INCIDENT RESPONSE PROCEDURE
+=========================================================
+
+PURPOSE
+-------
+
+Integrate ICS/SCADA threat intelligence into the incident response
+process and provide a structured response to vulnerabilities
+identified through vendor advisories and security intelligence.
+
+SELECTED THREAT
+---------------
+
+Threat:
+Siemens SIMATIC S7 web-server vulnerabilities
+
+Primary Advisory:
+SSA-688146
+
+Additional Advisory:
+ICSA-25-021-02
+
+Current Lab Applicability:
+Not directly applicable because the laboratory does not contain
+the affected Siemens PLC products.
+
+The procedure is therefore a simulated incident-response exercise
+based on the identified threat intelligence.
+
+1. PREPARATION
+--------------
+
+Maintain an up-to-date inventory of:
+
+- PLCs
+- HMIs
+- SCADA servers
+- Historians
+- Engineering workstations
+- Network devices
+- Remote-access systems
+- Firmware and software versions
+
+Maintain current:
+
+- Network diagrams
+- Configuration backups
+- Incident response contacts
+- Vendor advisory subscriptions
+- Maintenance procedures
+- Recovery procedures
+
+Threat intelligence sources should be reviewed regularly.
+
+2. DETECTION AND ANALYSIS
+-------------------------
+
+Monitor for:
+
+- Unexpected PLC configuration changes.
+- Unexpected firmware-update activity.
+- Unauthorized administrative access.
+- Suspicious web-interface activity.
+- Unexpected changes to CPU operating mode.
+- Authentication anomalies.
+- Unexpected network connections to industrial devices.
+- Suspicious links or user interactions involving management
+  interfaces.
+
+When suspicious activity is detected:
+
+1. Record the date and time.
+2. Identify the affected asset.
+3. Record the product and firmware version.
+4. Compare the asset against current vendor advisories.
+5. Preserve relevant logs and evidence.
+6. Determine whether the vulnerability is applicable.
+
+3. CONTAINMENT
+--------------
+
+If an affected industrial device is confirmed:
+
+- Restrict unnecessary network access.
+- Isolate the affected management interface where operationally
+  safe.
+- Restrict administrative accounts.
+- Stop unauthorized update activity.
+- Maintain required control-system availability.
+- Preserve logs before making destructive changes.
+
+Containment actions must not create unsafe industrial-process
+conditions.
+
+4. ERADICATION
+--------------
+
+Follow the affected vendor's official remediation guidance.
+
+Possible actions include:
+
+- Apply the vendor-recommended firmware update.
+- Apply software patches.
+- Remove unauthorized configuration changes.
+- Disable unnecessary services.
+- Restrict management interfaces.
+- Reset compromised credentials when appropriate.
+- Verify system configuration against an approved baseline.
+
+Updates should be performed only through an approved change-control
+process.
+
+5. RECOVERY
+-----------
+
+After remediation:
+
+1. Restore approved configurations if required.
+2. Restart affected services in a controlled sequence.
+3. Verify PLC communications.
+4. Verify SCADA monitoring.
+5. Verify alarms.
+6. Verify historian/data collection.
+7. Verify network connectivity.
+8. Review system logs.
+9. Monitor the system for abnormal behavior.
+10. Obtain operational approval before returning to normal service.
+
+6. POST-INCIDENT REVIEW
+----------------------
+
+Document:
+
+- Initial threat intelligence source.
+- Affected asset.
+- Vulnerability and CVE information.
+- Detection method.
+- Containment actions.
+- Remediation performed.
+- Recovery results.
+- Evidence collected.
+- Lessons learned.
+
+Update security controls and incident-response procedures based on
+the findings.
+
+THREAT INTELLIGENCE INTEGRATION
+-------------------------------
+
+Threat intelligence should feed the incident-response lifecycle:
+
+Threat Intelligence
+        |
+        v
+Asset Identification
+        |
+        v
+Applicability Assessment
+        |
+        v
+Detection Rules / Monitoring
+        |
+        v
+Incident Analysis
+        |
+        v
+Containment
+        |
+        v
+Remediation
+        |
+        v
+Recovery
+        |
+        v
+Lessons Learned
+        |
+        +------> Updated Threat Intelligence Monitoring
+
+CURRENT LAB ASSESSMENT
+----------------------
+
+The selected Siemens vulnerabilities are not confirmed on this
+Ubuntu laboratory because the affected Siemens PLC products are
+not present.
+
+The appropriate response is therefore:
+
+- Record the intelligence.
+- Record the affected products.
+- Compare future asset inventories against the advisories.
+- Maintain monitoring for relevant ICS threats.
+- Preserve the response procedure for future applicable systems.
+
+INCIDENT RESPONSE IMPROVEMENTS
+------------------------------
+
+The laboratory incident-response process should be improved by:
+
+1. Regularly reviewing CISA ICS advisories.
+2. Monitoring vendor security bulletins.
+3. Maintaining an accurate asset inventory.
+4. Tracking firmware and software versions.
+5. Mapping vulnerabilities to assets.
+6. Maintaining tested backups.
+7. Maintaining documented rollback procedures.
+8. Restricting administrative access.
+9. Monitoring configuration changes.
+10. Documenting all security incidents.
+
+FINAL ASSESSMENT
+----------------
+
+Threat intelligence becomes operationally useful when it is mapped
+to real assets and connected to detection, containment, remediation,
+and recovery procedures.
+
+The Lab 38 exercise demonstrates this process without claiming
+that the selected Siemens vulnerabilities are present in the
+Ubuntu laboratory.

@@ -1,0 +1,123 @@
+LAB 38 — THREAT TO LAB ENVIRONMENT MAPPING
+===========================================
+
+LAB ENVIRONMENT
+---------------
+
+The current laboratory is an Ubuntu 24.04-based system used for
+ICS/SCADA security training.
+
+Relevant observed components include:
+
+- Ubuntu operating system
+- OpenSSH server/client
+- OpenVPN
+- UFW
+- AppArmor
+- rsyslog
+- Network services
+- Administrative remote-access services
+
+The laboratory does not contain a physical Siemens SIMATIC S7 PLC
+or S7-1200 CPU. Therefore, the selected Siemens vulnerabilities
+are not confirmed vulnerabilities in the current host.
+
+THREAT MAPPING
+--------------
+
+| Threat | Affected Technology | Lab Component | Applicability | Recommended Action |
+|--------|---------------------|---------------|--------------|--------------------|
+| SSA-688146 XSS | Siemens SIMATIC S7 PLC web server | No Siemens PLC present | Not directly applicable | Monitor Siemens advisories and patch affected PLCs if deployed |
+| CVE-2026-25786 | Siemens SIMATIC S7 web server | No affected PLC present | Not directly applicable | Apply vendor fixes to affected Siemens devices |
+| CVE-2026-25787 | Siemens SIMATIC S7 web server | No affected PLC present | Not directly applicable | Apply vendor fixes and restrict management access |
+| CVE-2026-25789 | Siemens SIMATIC S7 web server | No affected PLC present | Not directly applicable | Apply vendor fixes and restrict administrative privileges |
+| ICSA-25-021-02 CSRF | Siemens S7-1200 CPU | No S7-1200 present | Not directly applicable | Upgrade affected CPUs and protect management interfaces |
+
+SECURITY CONTROL MAPPING
+------------------------
+
+Although the specific Siemens vulnerabilities are not directly
+present in this Ubuntu laboratory, the attack scenarios provide
+useful security-control requirements.
+
+1. NETWORK SEGMENTATION
+   - Separate ICS management networks from untrusted networks.
+   - Avoid unnecessary Internet exposure of industrial devices.
+
+2. ACCESS CONTROL
+   - Restrict administrative access to authorized personnel.
+   - Apply least-privilege principles.
+
+3. PATCH MANAGEMENT
+   - Track vendor security advisories.
+   - Verify affected product and firmware versions.
+   - Apply vendor-recommended updates during approved maintenance
+     windows.
+
+4. REMOTE ACCESS SECURITY
+   - Use secure remote-access mechanisms.
+   - Restrict management interfaces.
+   - Monitor administrative sessions.
+
+5. CHANGE CONTROL
+   - Require authorization before firmware or configuration changes.
+   - Maintain backups before updates.
+   - Maintain rollback capability.
+
+6. MONITORING
+   - Monitor logs and administrative activity.
+   - Investigate unexpected configuration or system changes.
+   - Maintain evidence for incident response.
+
+IMPACT ANALYSIS
+---------------
+
+If a comparable vulnerability existed in an actual ICS PLC web
+interface, exploitation could potentially affect the integrity
+of the control environment.
+
+Possible consequences include:
+
+- Unauthorized configuration changes.
+- Unauthorized administrative actions.
+- Changes to device operating state.
+- Loss of confidence in system integrity.
+- Disruption of monitoring or control operations.
+- Potential operational or safety consequences depending on the
+  affected industrial process.
+
+LAB IMPACT
+----------
+
+Current impact to this Ubuntu laboratory:
+
+LOW / NOT DIRECTLY APPLICABLE
+
+Reason:
+
+The identified Siemens products are not present in the current
+laboratory environment. The findings are therefore treated as
+threat intelligence rather than evidence of an active vulnerability.
+
+However, the laboratory demonstrates the defensive controls that
+would be required if Siemens ICS equipment were introduced.
+
+CONCLUSION
+----------
+
+Threat intelligence must be evaluated against the actual asset
+inventory.
+
+The correct response is not to assume that every published
+vulnerability affects the environment. Instead, security teams
+should determine:
+
+1. Is the affected product present?
+2. Is the affected version present?
+3. Is the vulnerable service enabled?
+4. Is the device reachable through the relevant attack path?
+5. Are compensating controls available?
+6. What remediation is recommended by the vendor?
+
+This process converts public threat intelligence into actionable
+ICS security information.

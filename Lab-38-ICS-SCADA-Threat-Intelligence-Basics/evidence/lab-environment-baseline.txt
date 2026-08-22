@@ -1,0 +1,100 @@
+========================================
+LAB 38 - ICS/SCADA ENVIRONMENT BASELINE
+========================================
+
+Sat Aug 22 03:12:12 UTC 2026
+
+===== HOST =====
+ip-172-31-10-43
+Linux ip-172-31-10-43 6.14.0-1018-aws #18~24.04.1-Ubuntu SMP Mon Nov 24 19:46:27 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+===== OS =====
+PRETTY_NAME="Ubuntu 24.04.3 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.3 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+
+===== NETWORK =====
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+ens5             UP             172.31.10.43/24 fe80::8ff:f6ff:fee5:45e1/64 
+docker0          DOWN           172.17.0.1/16 
+
+===== LISTENING SERVICES =====
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                                  
+udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*    uid:991 ino:4949 sk:1 cgroup:/system.slice/systemd-resolved.service <->                 
+udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*    uid:991 ino:4947 sk:2 cgroup:/system.slice/systemd-resolved.service <->                 
+udp   UNCONN 0      0            0.0.0.0:8443       0.0.0.0:*    uid:997 ino:9863 sk:3 cgroup:/system.slice/dcvserver.service <->                        
+udp   UNCONN 0      0          127.0.0.1:323        0.0.0.0:*    ino:8588 sk:4 cgroup:/system.slice/chrony.service <->                                   
+udp   UNCONN 0      0            0.0.0.0:41854      0.0.0.0:*    uid:116 ino:6060 sk:5 cgroup:/system.slice/avahi-daemon.service <->                     
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*    uid:116 ino:6058 sk:6 cgroup:/system.slice/avahi-daemon.service <->                     
+udp   UNCONN 0      0               [::]:8443          [::]:*    uid:997 ino:9864 sk:7 cgroup:/system.slice/dcvserver.service v6only:1 <->               
+udp   UNCONN 0      0              [::1]:323           [::]:*    ino:8589 sk:8 cgroup:/system.slice/chrony.service v6only:1 <->                          
+udp   UNCONN 0      0               [::]:53867         [::]:*    uid:116 ino:6061 sk:9 cgroup:/system.slice/avahi-daemon.service v6only:1 <->            
+udp   UNCONN 0      0               [::]:5353          [::]:*    uid:116 ino:6059 sk:a cgroup:/system.slice/avahi-daemon.service v6only:1 <->            
+tcp   LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*    ino:5808 sk:b cgroup:/system.slice/ssh.socket <->                                       
+tcp   LISTEN 0      10           0.0.0.0:8443       0.0.0.0:*    uid:997 ino:9861 sk:c cgroup:/system.slice/dcvserver.service <->                        
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*    uid:991 ino:4950 sk:d cgroup:/system.slice/systemd-resolved.service <->                 
+tcp   LISTEN 0      128        127.0.0.1:6010       0.0.0.0:*    uid:1000 ino:16472 sk:e cgroup:/user.slice/user-1000.slice/session-3.scope <->          
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    uid:991 ino:4948 sk:f cgroup:/system.slice/systemd-resolved.service <->                 
+tcp   LISTEN 0      128            [::1]:6010          [::]:*    uid:1000 ino:16471 sk:10 cgroup:/user.slice/user-1000.slice/session-3.scope v6only:1 <->
+tcp   LISTEN 0      4096            [::]:22            [::]:*    ino:5810 sk:11 cgroup:/system.slice/ssh.socket v6only:1 <->                             
+tcp   LISTEN 0      10              [::]:8443          [::]:*    uid:997 ino:9862 sk:12 cgroup:/system.slice/dcvserver.service v6only:1 <->              
+
+===== RUNNING SERVICES =====
+  UNIT                                           LOAD   ACTIVE SUB     DESCRIPTION
+  accounts-daemon.service                        loaded active running Accounts Service
+  acpid.service                                  loaded active running ACPI event daemon
+  amazon-cloudwatch-agent.service                loaded active running Amazon CloudWatch Agent
+  anacron.service                                loaded active running Run anacron jobs
+  atd.service                                    loaded active running Deferred execution scheduler
+  avahi-daemon.service                           loaded active running Avahi mDNS/DNS-SD Stack
+  chrony.service                                 loaded active running chrony, an NTP client/server
+  colord.service                                 loaded active running Manage, Install and Generate Color Profiles
+  containerd.service                             loaded active running containerd container runtime
+  cron.service                                   loaded active running Regular background program processing daemon
+  dbus.service                                   loaded active running D-Bus System Message Bus
+  dcvserver.service                              loaded active running Amazon DCV server daemon
+  dcvsessionlauncher.service                     loaded active running Amazon DCV session launcher daemon
+  docker.service                                 loaded active running Docker Application Container Engine
+  gdm.service                                    loaded active running GNOME Display Manager
+  health-monitor.service                         loaded active running Enhanced Health Monitor (900s intervals)
+  irqbalance.service                             loaded active running irqbalance daemon
+  kerneloops.service                             loaded active running Tool to automatically collect and submit kernel crash signatures
+  ModemManager.service                           loaded active running Modem Manager
+  multipathd.service                             loaded active running Device-Mapper Multipath Device Controller
+  networkd-dispatcher.service                    loaded active running Dispatcher daemon for systemd-networkd
+  NetworkManager.service                         loaded active running Network Manager
+  packagekit.service                             loaded active running PackageKit Daemon
+  polkit.service                                 loaded active running Authorization Manager
+  power-profiles-daemon.service                  loaded active running Power Profiles daemon
+  rsyslog.service                                loaded active running System Logging Service
+  rtkit-daemon.service                           loaded active running RealtimeKit Scheduling Policy Service
+  serial-getty@ttyS0.service                     loaded active running Serial Getty on ttyS0
+  snap.amazon-ssm-agent.amazon-ssm-agent.service loaded active running Service for snap application amazon-ssm-agent.amazon-ssm-agent
+  ssh.service                                    loaded active running OpenBSD Secure Shell server
+  switcheroo-control.service                     loaded active running Switcheroo Control Proxy service
+  systemd-journald.service                       loaded active running Journal Service
+  systemd-logind.service                         loaded active running User Login Management
+  systemd-networkd.service                       loaded active running Network Configuration
+  systemd-oomd.service                           loaded active running Userspace Out-Of-Memory (OOM) Killer
+  systemd-resolved.service                       loaded active running Network Name Resolution
+  systemd-udevd.service                          loaded active running Rule-based Manager for Device Events and Files
+  udisks2.service                                loaded active running Disk Manager
+  upower.service                                 loaded active running Daemon for power management
+  user@1000.service                              loaded active running User Manager for UID 1000
+  wpa_supplicant.service                         loaded active running WPA supplicant
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+41 loaded units listed.
