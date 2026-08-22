@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LAB 39 - SIMULATED HMI CONFIGURATION -->
+<hmi>
+    <name>HMI-LAB-01</name>
+    <version>1.0</version>
+    <plc_target>PLC-LAB-01</plc_target>
+    <protocol>Modbus-TCP</protocol>
+    <poll_interval>1000</poll_interval>
+    <alarm_monitoring>enabled</alarm_monitoring>
+    <remote_access>disabled</remote_access>
+</hmi>
