@@ -1,0 +1,109 @@
+LAB 37 — ICS/SCADA REMOTE UPDATE PLAN
+======================================
+
+Site:
+Remote ICS/SCADA Laboratory Site
+
+Maintenance Window:
+02:00 UTC - 05:00 UTC
+
+OBJECTIVE
+---------
+Perform controlled remote updates while maintaining system
+availability, security, integrity, and rollback capability.
+
+PRE-UPDATE ASSESSMENT
+---------------------
+- Identify all ICS/SCADA components requiring updates.
+- Record current software and firmware versions.
+- Identify critical PLC, HMI, SCADA, historian, engineering
+  workstation, and network components.
+- Confirm maintenance window.
+- Confirm authorized personnel.
+- Verify configuration and data backups.
+- Verify remote-access connectivity.
+- Confirm rollback procedures.
+
+UPDATE SEQUENCE
+---------------
+
+1. Backup and Verification
+   Priority: CRITICAL
+   Action: Back up configurations and verify backup integrity.
+
+2. PLC / Control Components
+   Priority: HIGH
+   Action: Update only during the approved maintenance window.
+   Validation: Confirm PLC communication and expected operation.
+
+3. SCADA Monitoring Software
+   Priority: MEDIUM
+   Action: Update after critical control components are stable.
+   Validation: Confirm monitoring, alarms, and visualization.
+
+4. Historian / Data Services
+   Priority: MEDIUM
+   Action: Update after SCADA validation.
+   Validation: Confirm data collection and storage.
+
+5. Gateway / Network Components
+   Priority: LOW
+   Action: Update after control and monitoring systems are stable.
+   Validation: Confirm required network connectivity.
+
+SECURE REMOTE ACCESS
+--------------------
+- Use an approved VPN connection.
+- Authenticate remote administrators securely.
+- Restrict access to authorized personnel.
+- Permit only required management/update traffic.
+- Monitor remote sessions.
+- Record administrative activity.
+
+BACKUP REQUIREMENTS
+-------------------
+- PLC configuration
+- SCADA configuration
+- Network configuration
+- Application configuration
+- Historian data/configuration
+- Relevant logs
+- System package/version information
+
+POST-UPDATE VALIDATION
+----------------------
+- Confirm services are running.
+- Confirm network connectivity.
+- Confirm ICS/SCADA communications.
+- Confirm alarms and monitoring.
+- Review system logs.
+- Verify expected application behavior.
+- Confirm system stability.
+
+ROLLBACK CONDITIONS
+-------------------
+Rollback will be initiated if:
+
+- Control communication is lost.
+- SCADA services fail.
+- Unexpected process behavior occurs.
+- Critical alarms appear.
+- Data collection fails.
+- System stability is reduced.
+- The update cannot be validated successfully.
+
+ROLLBACK PRIORITY
+-----------------
+1. Stop further update activity.
+2. Preserve logs and evidence.
+3. Restore backed-up configuration.
+4. Restore previous software/firmware where applicable.
+5. Restart affected services in a controlled order.
+6. Validate ICS/SCADA communications.
+7. Confirm stable operation.
+8. Document the incident and rollback.
+
+FINAL APPROVAL
+--------------
+Updates should only be considered complete after technical
+validation and operational approval.

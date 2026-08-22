@@ -1,0 +1,46 @@
+========================================
+LAB 37 - REMOTE ACCESS SECURITY BASELINE
+========================================
+
+===== DATE =====
+Sat Aug 22 02:56:57 UTC 2026
+
+===== OPENVPN =====
+OpenVPN 2.6.14 x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [PKCS11] [MH/PKTINFO] [AEAD] [DCO]
+library versions: OpenSSL 3.0.13 30 Jan 2024, LZO 2.10
+DCO version: N/A
+Originally developed by James Yonan
+Copyright (C) 2002-2024 OpenVPN Inc <sales@openvpn.net>
+
+===== SSH =====
+active
+LISTEN 0      4096         0.0.0.0:22        0.0.0.0:*          
+LISTEN 0      4096            [::]:22           [::]:*          
+
+===== LISTENING PORTS =====
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                                 
+udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*    uid:991 ino:4803 sk:1 cgroup:/system.slice/systemd-resolved.service <->                
+udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*    uid:991 ino:4801 sk:2 cgroup:/system.slice/systemd-resolved.service <->                
+udp   UNCONN 0      0            0.0.0.0:8443       0.0.0.0:*    uid:997 ino:9569 sk:3 cgroup:/system.slice/dcvserver.service <->                       
+udp   UNCONN 0      0          127.0.0.1:323        0.0.0.0:*    ino:7892 sk:4 cgroup:/system.slice/chrony.service <->                                  
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*    uid:116 ino:7224 sk:5 cgroup:/system.slice/avahi-daemon.service <->                    
+udp   UNCONN 0      0            0.0.0.0:55043      0.0.0.0:*    uid:116 ino:7226 sk:6 cgroup:/system.slice/avahi-daemon.service <->                    
+udp   UNCONN 0      0               [::]:45029         [::]:*    uid:116 ino:7227 sk:1001 cgroup:/system.slice/avahi-daemon.service v6only:1 <->        
+udp   UNCONN 0      0               [::]:8443          [::]:*    uid:997 ino:9570 sk:1002 cgroup:/system.slice/dcvserver.service v6only:1 <->           
+udp   UNCONN 0      0              [::1]:323           [::]:*    ino:7893 sk:1003 cgroup:/system.slice/chrony.service v6only:1 <->                      
+udp   UNCONN 0      0               [::]:5353          [::]:*    uid:116 ino:7225 sk:1004 cgroup:/system.slice/avahi-daemon.service v6only:1 <->        
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*    uid:991 ino:4804 sk:7 cgroup:/system.slice/systemd-resolved.service <->                
+tcp   LISTEN 0      128        127.0.0.1:6010       0.0.0.0:*    uid:1000 ino:16821 sk:8 cgroup:/user.slice/user-1000.slice/session-3.scope <->         
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    uid:991 ino:4802 sk:9 cgroup:/system.slice/systemd-resolved.service <->                
+tcp   LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*    ino:5927 sk:a cgroup:/system.slice/ssh.socket <->                                      
+tcp   LISTEN 0      10           0.0.0.0:8443       0.0.0.0:*    uid:997 ino:9567 sk:b cgroup:/system.slice/dcvserver.service <->                       
+tcp   LISTEN 0      128            [::1]:6010          [::]:*    uid:1000 ino:16819 sk:c cgroup:/user.slice/user-1000.slice/session-3.scope v6only:1 <->
+tcp   LISTEN 0      4096            [::]:22            [::]:*    ino:5929 sk:d cgroup:/system.slice/ssh.socket v6only:1 <->                             
+tcp   LISTEN 0      10              [::]:8443          [::]:*    uid:997 ino:9568 sk:e cgroup:/system.slice/dcvserver.service v6only:1 <->              
+
+===== FIREWALL STATUS =====
+Status: inactive
+
+===== IPTABLES POLICY =====
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+num   pkts bytes target     prot opt in     out     source               destination         

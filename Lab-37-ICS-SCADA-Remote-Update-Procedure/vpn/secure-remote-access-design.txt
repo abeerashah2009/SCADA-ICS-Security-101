@@ -1,0 +1,112 @@
+LAB 37 — SECURE REMOTE ACCESS DESIGN
+====================================
+
+PURPOSE
+-------
+Provide controlled and encrypted remote access for authorized
+ICS/SCADA maintenance and update operations.
+
+VPN TECHNOLOGY
+--------------
+OpenVPN
+
+Installed Version:
+OpenVPN 2.6.14
+
+SECURITY REQUIREMENTS
+---------------------
+- Remote maintenance must use an approved VPN.
+- VPN authentication must use strong certificates/keys.
+- Private keys must be protected from unauthorized access.
+- Only authorized maintenance personnel may connect.
+- VPN access should be limited to required ICS/SCADA systems.
+- Remote sessions should be logged and monitored.
+- Direct exposure of ICS/SCADA management interfaces to the
+  public Internet should be avoided.
+
+CURRENT LAB STATUS
+------------------
+- OpenVPN client software is installed.
+- No production VPN server or credentials are configured.
+- This laboratory therefore documents the secure VPN design
+  without creating or using fake credentials.
+
+FIREWALL REQUIREMENTS
+---------------------
+The production design should:
+
+1. Permit VPN traffic from approved sources.
+2. Permit SSH only from authorized management networks.
+3. Permit only required ICS/SCADA management traffic.
+4. Allow established and related connections.
+5. Deny unnecessary inbound traffic.
+6. Log security-relevant blocked traffic where appropriate.
+
+CURRENT LAB FIREWALL BASELINE
+------------------------------
+UFW:
+Inactive
+
+iptables INPUT policy:
+ACCEPT
+
+Important:
+The current AWS laboratory firewall configuration is preserved
+to prevent accidental loss of SSH access.
+
+AWS SECURITY CONSIDERATION
+--------------------------
+For an AWS-hosted laboratory, network restrictions should also
+be implemented through the AWS security-group layer. Any firewall
+changes inside the instance must preserve the required SSH
+management path.
+
+REMOTE UPDATE ACCESS FLOW
+-------------------------
+Authorized Administrator
+        |
+        v
+     VPN Tunnel
+        |
+        v
+   Secure Gateway
+        |
+        v
+ ICS/SCADA Management Network
+        |
+        +---- PLC
+        +---- HMI
+        +---- SCADA Server
+        +---- Historian
+        +---- Engineering Workstation
+
+OPERATIONAL CONTROL
+-------------------
+Remote updates should be performed only during an approved
+maintenance window.
+
+Before connecting:
+- Verify authorization.
+- Verify backup availability.
+- Confirm target system.
+- Confirm maintenance window.
+
+During update:
+- Maintain VPN connectivity.
+- Monitor system health.
+- Record administrative actions.
+- Avoid unnecessary configuration changes.
+
+After update:
+- Validate services.
+- Validate ICS/SCADA communication.
+- Review logs.
+- Confirm system stability.
+- Document the result.
+
+CONCLUSION
+----------
+The laboratory has OpenVPN software available and a documented
+secure remote-access design. Actual VPN deployment requires an
+authorized VPN server, certificates, keys, routing, and approved
+firewall rules.
