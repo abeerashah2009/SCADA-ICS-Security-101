@@ -1,0 +1,93 @@
+# Lab 40 - ICS/SCADA Security Policy Template
+
+policy:
+  name: ICS_Security_Policy
+  version: "1.0"
+  status: educational-laboratory-template
+
+  description: >
+    Security policy template demonstrating how ICS/SCADA security
+    practices can be aligned with concepts from ISA/IEC 62443
+    and NERC CIP.
+
+  scope:
+    environment: simulated ICS/SCADA laboratory
+    systems:
+      - PLC
+      - HMI
+      - SCADA components
+      - Industrial network components
+
+  controls:
+
+    - id: CM-01
+      name: Configuration Management
+      framework:
+        - ISA/IEC 62443
+        - NERC CIP
+      description: >
+        Maintain approved configurations and document configuration changes.
+      evidence:
+        - Version-controlled configuration files
+        - Change records
+        - Configuration hashes
+
+    - id: AC-01
+      name: Access Control
+      framework:
+        - ISA/IEC 62443
+        - NERC CIP
+      description: >
+        Restrict access to ICS systems and allow only authorized users
+        and approved communication paths.
+
+    - id: NS-01
+      name: Network Segmentation
+      framework:
+        - ISA/IEC 62443
+      description: >
+        Use security zones and controlled communication conduits to
+        reduce unnecessary exposure between industrial systems.
+
+    - id: IM-01
+      name: Incident Management
+      framework:
+        - ISA/IEC 62443
+        - NERC CIP
+      description: >
+        Establish procedures for detecting, reporting, responding to,
+        and documenting cybersecurity incidents.
+
+    - id: RC-01
+      name: Recovery
+      framework:
+        - ISA/IEC 62443
+        - NERC CIP
+      description: >
+        Maintain recovery procedures and verify that critical
+        configurations can be restored after an incident.
+
+    - id: MN-01
+      name: Security Monitoring
+      framework:
+        - ISA/IEC 62443
+        - NERC CIP
+      description: >
+        Monitor relevant systems and security events and investigate
+        abnormal activity.
+
+  enforcement:
+    review_period: quarterly
+    revision_condition:
+      - Significant changes to ICS infrastructure
+      - Major configuration changes
+      - New cybersecurity threats
+      - Security incidents
+      - Changes to applicable requirements
+
+  laboratory_note:
+    certification_status: not_certified
+    compliance_claim: false
+    description: >
+      This document is an educational policy template. It does not
+      demonstrate formal ISA/IEC 62443 certification or NERC CIP compliance.
