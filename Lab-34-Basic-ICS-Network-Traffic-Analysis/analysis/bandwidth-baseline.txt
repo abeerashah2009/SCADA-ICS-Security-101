@@ -1,0 +1,46 @@
+LAB 34 — BANDWIDTH BASELINE
+============================
+
+Capture:
+capture/ics-baseline.pcap
+
+Capture duration:
+9.722155 seconds
+
+Total packets:
+329
+
+Data size:
+22 kB
+
+Data byte rate:
+2340 bytes/sec
+
+Data bit rate:
+18 kbps
+
+Average packet size:
+69.16 bytes
+
+Average packet rate:
+33 packets/sec
+
+Baseline interpretation:
+The controlled ICS simulation generated low-bandwidth,
+repetitive TCP traffic. Communication consisted of short-lived
+connections carrying small application payloads on the simulated
+Modbus and DNP3 ports.
+
+This baseline can be used for comparison with future captures.
+Unexpected increases in packet rate, bandwidth, connection
+frequency, or payload characteristics could indicate abnormal
+activity and should be investigated.
+
+Environment:
+AWS EC2 Ubuntu Linux
+Interface:
+loopback (lo)
+
+Limitation:
+The measurements represent a controlled simulation rather than
+a production ICS network.

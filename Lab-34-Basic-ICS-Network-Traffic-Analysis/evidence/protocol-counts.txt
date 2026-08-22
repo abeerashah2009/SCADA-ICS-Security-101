@@ -1,0 +1,37 @@
+LAB 34 — ICS NETWORK TRAFFIC ANALYSIS
+=====================================
+
+Capture file:
+capture/ics-baseline.pcap
+
+Protocol simulation:
+Modbus-style TCP traffic: port 1502
+DNP3-style TCP traffic: port 20000
+
+Packet counts:
+Modbus simulated traffic: 166 packets
+DNP3 simulated traffic: 163 packets
+Total packets: 329
+
+Application payload observations:
+Modbus-style payload: 12 bytes per generated message
+DNP3-style payload: 8 bytes per generated message
+
+Capture quality:
+Packets captured: 329
+Packets dropped by kernel: 0
+
+Traffic pattern:
+The simulated ICS traffic repeatedly established TCP connections,
+transmitted a small application payload, and closed the connection.
+The repeated pattern provides a controlled baseline for comparison
+with future anomalous traffic.
+
+Environment:
+AWS EC2 Ubuntu Linux
+Loopback interface (lo)
+
+Important limitation:
+This is simulated ICS traffic generated in a controlled laboratory
+environment. It is not traffic captured from a production PLC,
+SCADA system, or physical industrial network.
