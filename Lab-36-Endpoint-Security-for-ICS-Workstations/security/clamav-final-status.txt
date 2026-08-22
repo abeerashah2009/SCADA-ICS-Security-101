@@ -1,0 +1,22 @@
+========================================
+LAB 36 - CLAMAV FINAL STATUS
+========================================
+
+===== VERSION =====
+ClamAV 1.5.3/28099/Fri Aug 21 06:26:38 2026
+
+===== DATABASE =====
+total 108M
+-rw-r--r-- 1 clamav clamav 8.9K Aug 22 02:41 bytecode-339.cvd.sign
+-rw-r--r-- 1 clamav clamav 276K Aug 22 02:41 bytecode.cvd
+-rw-r--r-- 1 clamav clamav 8.9K Aug 22 02:41 daily-28099.cvd.sign
+-rw-r--r-- 1 clamav clamav  23M Aug 22 02:41 daily.cvd
+-rw-r--r-- 1 clamav clamav   90 Aug 22 02:41 freshclam.dat
+-rw-r--r-- 1 clamav clamav 8.9K Aug 22 02:41 main-63.cvd.sign
+-rw-r--r-- 1 clamav clamav  85M Aug 22 02:41 main.cvd
+
+===== SERVICE ENABLED =====
+enabled
+
+===== SERVICE ACTIVE =====
+active

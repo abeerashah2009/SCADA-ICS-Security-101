@@ -1,0 +1,25 @@
+========================================
+LAB 36 - CLAMAV ENDPOINT PROTECTION
+========================================
+
+===== CLAMAV VERSION =====
+ClamAV 1.5.3/28099/Fri Aug 21 06:26:38 2026
+
+===== CLAMAV SERVICE =====
+enabled
+inactive
+
+===== CLAMAV SERVICE STATUS =====
+○ clamav-daemon.service - Clam AntiVirus userspace daemon
+     Loaded: loaded (/usr/lib/systemd/system/clamav-daemon.service; enabled; preset: enabled)
+    Drop-In: /etc/systemd/system/clamav-daemon.service.d
+             └─extend.conf
+     Active: inactive (dead)
+TriggeredBy: ○ clamav-daemon.socket
+  Condition: start condition unmet at Sat 2026-08-22 02:41:31 UTC; 1min 8s ago
+             └─ ConditionPathExistsGlob=/var/lib/clamav/daily.{c[vl]d,inc} was not met
+       Docs: man:clamd(8)
+             man:clamd.conf(5)
+             https://docs.clamav.net/
+
+Aug 22 02:41:31 ip-172-31-10-101 systemd[1]: clamav-daemon.service - Clam AntiVirus userspace daemon was skipped because of an unmet condition check (ConditionPathExistsGlob=/var/lib/clamav/daily.{c[vl]d,inc}).

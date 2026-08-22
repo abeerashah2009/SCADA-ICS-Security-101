@@ -1,0 +1,14 @@
+========================================
+LAB 36 - USB SECURITY BASELINE
+========================================
+
+Sat Aug 22 02:46:02 UTC 2026
+
+===== USB STORAGE MODULE =====
+usb-storage module is not currently loaded
+
+===== USB DEVICE TOOL =====
+/usr/bin/lsusb
+
+===== EXISTING USB-STORAGE RESTRICTIONS =====
+No usb-storage restriction currently configured

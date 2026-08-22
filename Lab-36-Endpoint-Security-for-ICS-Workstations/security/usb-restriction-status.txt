@@ -1,0 +1,18 @@
+========================================
+LAB 36 - USB STORAGE RESTRICTION
+========================================
+
+Sat Aug 22 02:47:10 UTC 2026
+
+===== CONFIGURATION =====
+blacklist usb-storage
+
+===== INITRAMFS =====
+lrwxrwxrwx 1 root root  26 Jan  2  2026 /boot/initrd.img -> initrd.img-6.14.0-1018-aws
+-rw-r--r-- 1 root root 48M Dec  3  2025 /boot/initrd.img-6.14.0-1015-aws
+-rw-r--r-- 1 root root 48M Jan  2  2026 /boot/initrd.img-6.14.0-1017-aws
+-rw-r--r-- 1 root root 48M Aug 22 02:46 /boot/initrd.img-6.14.0-1018-aws
+lrwxrwxrwx 1 root root  26 Jan  2  2026 /boot/initrd.img.old -> initrd.img-6.14.0-1017-aws
+
+===== MODULE STATE =====
+usb-storage module is not currently loaded

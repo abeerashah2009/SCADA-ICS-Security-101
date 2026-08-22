@@ -1,0 +1,18 @@
+========================================
+LAB 36 - ICS WORKSTATION SOFTWARE INVENTORY
+========================================
+
+Sat Aug 22 02:47:46 UTC 2026
+
+===== PACKAGE COUNT =====
+1738
+
+===== CLAMAV PACKAGES =====
+clamav	1.5.3+dfsg-0ubuntu0.24.04.1
+clamav-base	1.5.3+dfsg-0ubuntu0.24.04.1
+clamav-daemon	1.5.3+dfsg-0ubuntu0.24.04.1
+clamav-freshclam	1.5.3+dfsg-0ubuntu0.24.04.1
+libclamav12:amd64	1.5.3+dfsg-0ubuntu0.24.04.1
+
+===== INVENTORY FILE =====
+-rw-rw-r-- 1 ubuntu ubuntu 68K Aug 22 02:47 inventory/software-inventory.txt
